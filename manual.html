@@ -16,7 +16,6 @@
 </head>
 
 <body>
-    <!-- Animated Background -->
     <div class="animated-bg">
         <div class="blob blob-1"></div>
         <div class="blob blob-2"></div>
@@ -24,7 +23,6 @@
         <div class="blob blob-4"></div>
     </div>
 
-    <!-- Navigation -->
     <nav class="navbar scrolled">
         <div class="nav-container">
             <a href="index.html" class="logo">
@@ -37,7 +35,6 @@
         </div>
     </nav>
 
-    <!-- Manual Content -->
     <main class="manual-container">
         <header class="manual-header">
             <span class="section-tag">Documentación Técnica</span>
@@ -46,7 +43,6 @@
                 coworking</p>
         </header>
 
-        <!-- Table of Contents -->
         <nav class="toc glass-card">
             <h2>📋 Índice</h2>
             <ol class="toc-list">
@@ -59,35 +55,33 @@
             </ol>
         </nav>
 
-        <!-- Section 1: Equipos -->
         <section id="equipos" class="manual-section glass-card">
             <div class="section-number">01</div>
             <h2>Equipos Informáticos Instalados</h2>
-            <p class="section-intro">Se han instalado <strong>14 equipos</strong> con Windows 11 Pro, diseñados para
-                ofrecer un entorno de trabajo eficiente y estable.</p>
+            <p class="section-intro">Se han instalado <strong>14 equipos Dell OptiPlex 3060 SFF</strong> con Windows 11 Pro, preparados para
+                tareas de ofimática, navegación, videoconferencias y trabajo colaborativo.</p>
 
             <div class="subsection">
                 <h3>1.1 Especificaciones Técnicas</h3>
                 <div class="specs-table">
                     <div class="spec-row">
                         <span class="spec-name">🖥️ Procesador</span>
-                        <span class="spec-value">Intel Core i5 (8ª generación o superior) o AMD Ryzen 5
-                            equivalente</span>
+                        <span class="spec-value">Intel Core i5-8500T</span>
                     </div>
                     <div class="spec-row">
                         <span class="spec-name">💾 Memoria RAM</span>
-                        <span class="spec-value">8 GB (recomendado 16 GB para multitarea o software avanzado)</span>
+                        <span class="spec-value">16 GB de memoria RAM</span>
                     </div>
                     <div class="spec-row">
                         <span class="spec-name">💿 Disco</span>
-                        <span class="spec-value">SSD 512 GB para alto rendimiento</span>
+                        <span class="spec-value">SSD de 512 GB</span>
                     </div>
                     <div class="spec-row">
                         <span class="spec-name">🌐 Conectividad</span>
                         <span class="spec-value">
                             <ul>
-                                <li>Tarjeta de red Gigabit 10/100/1000 Mbps</li>
-                                <li>Wi-Fi 6 (802.11ax)</li>
+                                <li>Gigabit Ethernet</li>
+                                <li>Wi-Fi 6</li>
                             </ul>
                         </span>
                     </div>
@@ -96,46 +90,42 @@
                         <span class="spec-value">
                             <ul>
                                 <li>TPM 2.0</li>
-                                <li>Arranque seguro (UEFI Secure Boot)</li>
+                                <li>Arranque seguro (Secure Boot) habilitado</li>
                             </ul>
                         </span>
                     </div>
                     <div class="spec-row">
-                        <span class="spec-name">🔌 Puertos</span>
-                        <span class="spec-value">USB 3.0, HDMI o DisplayPort, RJ45</span>
+                        <span class="spec-name">⌨️ Periféricos</span>
+                        <span class="spec-value">Teclado y ratón inalámbricos</span>
                     </div>
                     <div class="spec-row">
                         <span class="spec-name">🖥️ Pantalla</span>
-                        <span class="spec-value">24" Full HD</span>
-                    </div>
-                    <div class="spec-row">
-                        <span class="spec-name">🔗 Acceso remoto</span>
-                        <span class="spec-value">Compatible con Remote Desktop Protocol (RDP)</span>
+                        <span class="spec-value">Monitores Full HD de 24"</span>
                     </div>
                 </div>
             </div>
 
             <div class="subsection">
-                <h3>1.2 Periféricos incluidos</h3>
+                <h3>1.2 Infraestructura Adicional</h3>
                 <ul class="feature-list">
-                    <li>Teclado y ratón inalámbricos</li>
-                    <li>Monitor externo adicional de 24" opcional</li>
+                    <li>Servidor central (HP ProLiant MicroServer Gen10+)</li>
+                    <li>Sistema NAS (Synology DS923+)</li>
+                    <li>Impresora multifunción en red (HP LaserJet Pro MFP)</li>
                 </ul>
             </div>
         </section>
 
-        <!-- Section 2: Sistema Operativo -->
         <section id="sistema" class="manual-section glass-card">
             <div class="section-number">02</div>
             <h2>Configuración del Sistema Operativo</h2>
 
             <div class="subsection">
-                <h3>2.1 Parámetros iniciales</h3>
+                <h3>2.1 Parámetros iniciales de Equipos Cliente</h3>
                 <ul class="feature-list">
                     <li>Instalación limpia de Windows 11 Pro</li>
-                    <li>Habilitación de Secure Boot</li>
-                    <li>Activación automática de Windows</li>
-                    <li>Configuración de usuario estándar + usuario administrador</li>
+                    <li>Habilitación de Secure Boot y TPM 2.0</li>
+                    <li>Configuración de conexión automática mediante DHCP</li>
+                    <li>Acceso configurado a carpetas compartidas y a la impresora de red</li>
                 </ul>
             </div>
 
@@ -145,29 +135,29 @@
                     <div class="info-card">
                         <span class="info-icon">🔑</span>
                         <div>
-                            <strong>Contraseña</strong>
-                            <p>Mínimo 8 caracteres</p>
-                        </div>
-                    </div>
-                    <div class="info-card">
-                        <span class="info-icon">⏱️</span>
-                        <div>
-                            <strong>Expiración</strong>
-                            <p>Cada 180 días</p>
-                        </div>
-                    </div>
-                    <div class="info-card">
-                        <span class="info-icon">🔄</span>
-                        <div>
-                            <strong>Windows Update</strong>
-                            <p>Modo automático</p>
+                            <strong>Accesos</strong>
+                            <p>Contraseñas seguras y permisos</p>
                         </div>
                     </div>
                     <div class="info-card">
                         <span class="info-icon">🛡️</span>
                         <div>
+                            <strong>Firewall</strong>
+                            <p>Activado en router y equipos</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-icon">🔄</span>
+                        <div>
+                            <strong>Actualizaciones</strong>
+                            <p>Automáticas habilitadas</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-icon">🔰</span>
+                        <div>
                             <strong>Antivirus</strong>
-                            <p>Corporativo activo</p>
+                            <p>Empresarial instalado</p>
                         </div>
                     </div>
                 </div>
@@ -176,53 +166,43 @@
             <div class="subsection">
                 <h3>2.3 Software instalado</h3>
                 <ul class="feature-list">
-                    <li>Suite ofimática (Microsoft Office o LibreOffice)</li>
-                    <li>Navegadores actualizados (Edge / Chrome / Firefox)</li>
-                    <li>Aplicación interna de gestión de reservas</li>
-                    <li>Herramientas de soporte remoto</li>
+                    <li>Microsoft 365 Business Standard (Ofimática)</li>
+                    <li>Microsoft Teams (Comunicación y colaboración)</li>
+                    <li>Navegadores actualizados y Antivirus empresarial</li>
                 </ul>
             </div>
         </section>
 
-        <!-- Section 3: Servicios de Red -->
         <section id="red" class="manual-section glass-card">
             <div class="section-number">03</div>
             <h2>Configuración de Servicios de Red</h2>
-            <p class="section-intro">La red del coworking se ha diseñado para ser estable, segura y de fácil
-                administración.</p>
+            <p class="section-intro">La red fue diseñada para proporcionar conectividad estable y segura a todos los dispositivos, utilizando el rango privado 192.168.1.0/24.</p>
 
             <div class="subsection">
                 <h3>3.1 Dirección IP</h3>
                 <div class="code-block">
-                    <div class="code-line"><span class="code-key">Modo:</span> DHCP automático para usuarios</div>
+                    <div class="code-line"><span class="code-key">Modo:</span> DHCP automático para equipos cliente</div>
                     <div class="code-line"><span class="code-key">Rango general:</span> 192.168.1.0/24</div>
-                    <div class="code-line"><span class="code-key">Gateway:</span> 192.168.1.1</div>
-                    <div class="code-line"><span class="code-key">DNS Primario:</span> 192.168.1.10 (servidor interno)
-                    </div>
-                    <div class="code-line"><span class="code-key">DNS Secundario:</span> 8.8.8.8</div>
+                    <div class="code-line"><span class="code-key">Gateway:</span> 192.168.1.1 (Router/Firewall Ubiquiti)</div>
+                    <div class="code-line"><span class="code-key">Servidor Central:</span> 192.168.1.10</div>
+                    <div class="code-line"><span class="code-key">Seguridad Wi-Fi:</span> Cifrado WPA3</div>
                 </div>
             </div>
 
             <div class="subsection">
-                <h3>3.2 DHCP</h3>
+                <h3>3.2 Router y Switch</h3>
                 <div class="code-block">
-                    <div class="code-line"><span class="code-key">Ámbito activo:</span> 192.168.1.20 – 192.168.1.200
-                    </div>
-                    <div class="code-line"><span class="code-key">Tiempo de concesión:</span> 8 días</div>
-                    <div class="code-line"><span class="code-key">Reservas:</span> Opcionales para impresoras y
-                        dispositivos críticos</div>
+                    <div class="code-line"><span class="code-key">Router/Firewall:</span> Ubiquiti UniFi Security Gateway (DHCP, NAT, Firewall)</div>
+                    <div class="code-line"><span class="code-key">Switch:</span> TP-Link TL-SG1024DE (Gigabit, puertos no usados deshabilitados)</div>
                 </div>
             </div>
 
             <div class="subsection">
-                <h3>3.3 DNS</h3>
+                <h3>3.3 DNS y Asignaciones Fijas</h3>
                 <div class="code-block">
-                    <div class="code-line"><span class="code-key">Zona principal:</span> coworking.local</div>
-                    <div class="code-line code-comment">// Registros configurados</div>
-                    <div class="code-line"><span class="code-host">server.coworking.local</span> → 192.168.1.10</div>
-                    <div class="code-line"><span class="code-host">printer01.coworking.local</span> → 192.168.1.50</div>
-                    <div class="code-line code-comment">// Alias (CNAME)</div>
-                    <div class="code-line"><span class="code-host">www</span> → server</div>
+                    <div class="code-line"><span class="code-key">Servidor Central (Windows Server 2022):</span> 192.168.1.10</div>
+                    <div class="code-line"><span class="code-key">Sistema NAS (Synology):</span> 192.168.1.20</div>
+                    <div class="code-line"><span class="code-key">Impresora (HP LaserJet):</span> 192.168.1.30</div>
                 </div>
             </div>
 
@@ -243,213 +223,209 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <!-- INFRAESTRUCTURA -->
                             <tr class="category-row">
                                 <td colspan="7">🏗️ Infraestructura</td>
                             </tr>
                             <tr>
-                                <td><span class="device-name">Router0</span></td>
+                                <td><span class="device-name">Router / Firewall Profesional</span></td>
                                 <td>G0/0</td>
                                 <td><code>192.168.1.1</code></td>
                                 <td>/24</td>
                                 <td>N/A</td>
                                 <td><span class="badge badge-static">Estática</span></td>
-                                <td>Gateway / DHCP / DNS</td>
+                                <td>Gateway / DHCP / Firewall</td>
                             </tr>
                             <tr>
-                                <td><span class="device-name">Switch0</span></td>
+                                <td><span class="device-name">Switch Gestionable</span></td>
                                 <td>VLAN 1</td>
                                 <td><code>192.168.1.2</code></td>
                                 <td>/24</td>
                                 <td><code>192.168.1.1</code></td>
                                 <td><span class="badge badge-static">Estática</span></td>
-                                <td>Gestión (SVI)</td>
+                                <td>Gestión de red Gigabit</td>
                             </tr>
 
-                            <!-- SERVICIOS -->
                             <tr class="category-row">
                                 <td colspan="7">🖥️ Servicios</td>
                             </tr>
                             <tr>
-                                <td><span class="device-name">Server0</span></td>
+                                <td><span class="device-name">Servidor Central</span></td>
                                 <td>FastEth0</td>
                                 <td><code>192.168.1.10</code></td>
                                 <td>/24</td>
                                 <td><code>192.168.1.1</code></td>
                                 <td><span class="badge badge-static">Estática</span></td>
-                                <td>Servidor de archivos</td>
+                                <td>Windows Server 2022 / Archivos</td>
                             </tr>
                             <tr>
-                                <td><span class="device-name">Printer0</span></td>
+                                <td><span class="device-name">Sistema NAS</span></td>
                                 <td>FastEth0</td>
                                 <td><code>192.168.1.20</code></td>
                                 <td>/24</td>
                                 <td><code>192.168.1.1</code></td>
                                 <td><span class="badge badge-static">Estática</span></td>
-                                <td>Impresora de red</td>
+                                <td>Synology / Copias de seguridad</td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">Impresora Multifunción</span></td>
+                                <td>FastEth0</td>
+                                <td><code>192.168.1.30</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-static">Estática</span></td>
+                                <td>HP LaserJet Pro MFP</td>
                             </tr>
 
-                            <!-- EQUIPOS MÓVILES -->
                             <tr class="category-row">
                                 <td colspan="7">💻 Equipos Móviles <span class="range-tag">(Rango DHCP)</span></td>
                             </tr>
                             <tr>
                                 <td><span class="device-name">Laptop0</span></td>
                                 <td>Wireless</td>
-                                <td><code>192.168.1.50</code></td>
+                                <td><code>Rango Automático</code></td>
                                 <td>/24</td>
                                 <td><code>192.168.1.1</code></td>
                                 <td><span class="badge badge-dynamic">Dinámica</span></td>
-                                <td></td>
+                                <td>Red WPA3</td>
                             </tr>
                             <tr>
                                 <td><span class="device-name">Laptop1</span></td>
                                 <td>Wireless</td>
-                                <td><code>192.168.1.51</code></td>
+                                <td><code>Rango Automático</code></td>
                                 <td>/24</td>
                                 <td><code>192.168.1.1</code></td>
                                 <td><span class="badge badge-dynamic">Dinámica</span></td>
-                                <td></td>
+                                <td>Red WPA3</td>
                             </tr>
 
-                            <!-- ORDENADORES -->
                             <tr class="category-row">
-                                <td colspan="7">🖥️ Ordenadores <span class="range-tag">(Rango DHCP)</span></td>
-                            </tr>
-                            <tr>
-                                <td><span class="device-name">PC0</span></td>
-                                <td>FastEth0</td>
-                                <td><code>192.168.1.52</code></td>
-                                <td>/24</td>
-                                <td><code>192.168.1.1</code></td>
-                                <td><span class="badge badge-dynamic">Dinámica</span></td>
-                                <td></td>
+                                <td colspan="7">🖥️ Ordenadores Cliente (1 al 14) <span class="range-tag">(Rango DHCP)</span></td>
                             </tr>
                             <tr>
                                 <td><span class="device-name">PC1</span></td>
                                 <td>FastEth0</td>
-                                <td><code>192.168.1.53</code></td>
+                                <td><code>Rango Automático</code></td>
                                 <td>/24</td>
                                 <td><code>192.168.1.1</code></td>
                                 <td><span class="badge badge-dynamic">Dinámica</span></td>
-                                <td></td>
+                                <td>Dell OptiPlex 3060</td>
                             </tr>
                             <tr>
                                 <td><span class="device-name">PC2</span></td>
                                 <td>FastEth0</td>
-                                <td><code>192.168.1.54</code></td>
+                                <td><code>Rango Automático</code></td>
                                 <td>/24</td>
                                 <td><code>192.168.1.1</code></td>
                                 <td><span class="badge badge-dynamic">Dinámica</span></td>
-                                <td></td>
+                                <td>Dell OptiPlex 3060</td>
                             </tr>
                             <tr>
                                 <td><span class="device-name">PC3</span></td>
                                 <td>FastEth0</td>
-                                <td><code>192.168.1.55</code></td>
+                                <td><code>Rango Automático</code></td>
                                 <td>/24</td>
                                 <td><code>192.168.1.1</code></td>
                                 <td><span class="badge badge-dynamic">Dinámica</span></td>
-                                <td></td>
+                                <td>Dell OptiPlex 3060</td>
                             </tr>
                             <tr>
                                 <td><span class="device-name">PC4</span></td>
                                 <td>FastEth0</td>
-                                <td><code>192.168.1.56</code></td>
+                                <td><code>Rango Automático</code></td>
                                 <td>/24</td>
                                 <td><code>192.168.1.1</code></td>
                                 <td><span class="badge badge-dynamic">Dinámica</span></td>
-                                <td></td>
+                                <td>Dell OptiPlex 3060</td>
                             </tr>
                             <tr>
                                 <td><span class="device-name">PC5</span></td>
                                 <td>FastEth0</td>
-                                <td><code>192.168.1.57</code></td>
+                                <td><code>Rango Automático</code></td>
                                 <td>/24</td>
                                 <td><code>192.168.1.1</code></td>
                                 <td><span class="badge badge-dynamic">Dinámica</span></td>
-                                <td></td>
+                                <td>Dell OptiPlex 3060</td>
                             </tr>
                             <tr>
                                 <td><span class="device-name">PC6</span></td>
                                 <td>FastEth0</td>
-                                <td><code>192.168.1.58</code></td>
+                                <td><code>Rango Automático</code></td>
                                 <td>/24</td>
                                 <td><code>192.168.1.1</code></td>
                                 <td><span class="badge badge-dynamic">Dinámica</span></td>
-                                <td>Añadido</td>
+                                <td>Dell OptiPlex 3060</td>
                             </tr>
                             <tr>
                                 <td><span class="device-name">PC7</span></td>
                                 <td>FastEth0</td>
-                                <td><code>192.168.1.59</code></td>
+                                <td><code>Rango Automático</code></td>
                                 <td>/24</td>
                                 <td><code>192.168.1.1</code></td>
                                 <td><span class="badge badge-dynamic">Dinámica</span></td>
-                                <td></td>
+                                <td>Dell OptiPlex 3060</td>
                             </tr>
                             <tr>
                                 <td><span class="device-name">PC8</span></td>
                                 <td>FastEth0</td>
-                                <td><code>192.168.1.60</code></td>
+                                <td><code>Rango Automático</code></td>
                                 <td>/24</td>
                                 <td><code>192.168.1.1</code></td>
                                 <td><span class="badge badge-dynamic">Dinámica</span></td>
-                                <td></td>
+                                <td>Dell OptiPlex 3060</td>
                             </tr>
                             <tr>
                                 <td><span class="device-name">PC9</span></td>
                                 <td>FastEth0</td>
-                                <td><code>192.168.1.61</code></td>
+                                <td><code>Rango Automático</code></td>
                                 <td>/24</td>
                                 <td><code>192.168.1.1</code></td>
                                 <td><span class="badge badge-dynamic">Dinámica</span></td>
-                                <td></td>
+                                <td>Dell OptiPlex 3060</td>
                             </tr>
                             <tr>
                                 <td><span class="device-name">PC10</span></td>
                                 <td>FastEth0</td>
-                                <td><code>192.168.1.62</code></td>
+                                <td><code>Rango Automático</code></td>
                                 <td>/24</td>
                                 <td><code>192.168.1.1</code></td>
                                 <td><span class="badge badge-dynamic">Dinámica</span></td>
-                                <td></td>
+                                <td>Dell OptiPlex 3060</td>
                             </tr>
                             <tr>
                                 <td><span class="device-name">PC11</span></td>
                                 <td>FastEth0</td>
-                                <td><code>192.168.1.63</code></td>
+                                <td><code>Rango Automático</code></td>
                                 <td>/24</td>
                                 <td><code>192.168.1.1</code></td>
                                 <td><span class="badge badge-dynamic">Dinámica</span></td>
-                                <td></td>
+                                <td>Dell OptiPlex 3060</td>
                             </tr>
                             <tr>
                                 <td><span class="device-name">PC12</span></td>
                                 <td>FastEth0</td>
-                                <td><code>192.168.1.64</code></td>
+                                <td><code>Rango Automático</code></td>
                                 <td>/24</td>
                                 <td><code>192.168.1.1</code></td>
                                 <td><span class="badge badge-dynamic">Dinámica</span></td>
-                                <td></td>
+                                <td>Dell OptiPlex 3060</td>
                             </tr>
                             <tr>
                                 <td><span class="device-name">PC13</span></td>
                                 <td>FastEth0</td>
-                                <td><code>192.168.1.65</code></td>
+                                <td><code>Rango Automático</code></td>
                                 <td>/24</td>
                                 <td><code>192.168.1.1</code></td>
                                 <td><span class="badge badge-dynamic">Dinámica</span></td>
-                                <td></td>
+                                <td>Dell OptiPlex 3060</td>
                             </tr>
                             <tr>
                                 <td><span class="device-name">PC14</span></td>
                                 <td>FastEth0</td>
-                                <td><code>192.168.1.66</code></td>
+                                <td><code>Rango Automático</code></td>
                                 <td>/24</td>
                                 <td><code>192.168.1.1</code></td>
                                 <td><span class="badge badge-dynamic">Dinámica</span></td>
-                                <td></td>
+                                <td>Dell OptiPlex 3060</td>
                             </tr>
                         </tbody>
                     </table>
@@ -457,94 +433,70 @@
             </div>
         </section>
 
-        <!-- Section 4: Servicios Implementados -->
         <section id="servicios" class="manual-section glass-card">
             <div class="section-number">04</div>
             <h2>Servicios Implementados</h2>
 
             <div class="subsection">
-                <h3>4.1 Servidor principal</h3>
+                <h3>4.1 Servidor Central y NAS</h3>
                 <p>El servidor local del coworking proporciona los siguientes servicios:</p>
                 <div class="service-grid">
                     <div class="service-item">
-                        <span class="service-icon">📡</span>
-                        <strong>DHCP</strong>
-                        <p>Asignación de direcciones IP</p>
+                        <span class="service-icon">🖥️</span>
+                        <strong>Windows Server 2022</strong>
+                        <p>Usuarios, permisos y carpetas compartidas</p>
                     </div>
                     <div class="service-item">
-                        <span class="service-icon">🌐</span>
-                        <strong>DNS</strong>
-                        <p>Resolución interna</p>
+                        <span class="service-icon">💾</span>
+                        <strong>Sistema NAS</strong>
+                        <p>Almacenamiento y copias de seguridad automáticas</p>
                     </div>
                     <div class="service-item">
-                        <span class="service-icon">📁</span>
-                        <strong>File Server</strong>
-                        <p>Carpetas compartidas</p>
+                        <span class="service-icon">🖨️</span>
+                        <strong>Impresora de red</strong>
+                        <p>Funciones de impresión y escaneo compartido</p>
                     </div>
-                </div>
-                <div class="code-block">
-                    <div class="code-line code-comment">// Estructura de carpetas compartidas</div>
-                    <div class="code-line"><span class="code-folder">/public</span> → acceso permitido a todos</div>
-                    <div class="code-line"><span class="code-folder">/staff</span> → solo personal autorizado</div>
                 </div>
             </div>
 
             <div class="subsection">
-                <h3>4.2 Servicios para usuarios</h3>
+                <h3>4.2 Medidas adicionales</h3>
                 <ul class="feature-list">
-                    <li>Internet de alta velocidad</li>
-                    <li>Impresión centralizada</li>
-                    <li>Acceso a red Wi-Fi</li>
-                    <li>Aplicación de gestión de reservas</li>
+                    <li>Copias de seguridad automáticas en el NAS</li>
+                    <li>Restricción de accesos mediante permisos de usuario</li>
+                    <li>Actualizaciones automáticas habilitadas</li>
                 </ul>
-            </div>
-
-            <div class="subsection">
-                <h3>4.3 Seguridad general</h3>
-                <div class="security-grid">
-                    <div class="security-item">
-                        <span class="security-badge">WPA3</span>
-                        <p>Red Wi-Fi protegida</p>
-                    </div>
-                    <div class="security-item">
-                        <span class="security-badge">Firewall</span>
-                        <p>Permitir HTTP(S), restringir segmentos</p>
-                    </div>
-                    <div class="security-item">
-                        <span class="security-badge">RDP</span>
-                        <p>Solo para soporte técnico</p>
-                    </div>
-                </div>
             </div>
         </section>
 
-        <!-- Section 5: Pruebas -->
         <section id="pruebas" class="manual-section glass-card">
             <div class="section-number">05</div>
             <h2>Pruebas Técnicas Realizadas</h2>
+            <p class="section-intro">Una vez configurada la infraestructura, se realizaron pruebas de conectividad y funcionamiento utilizando Cisco Packet Tracer.</p>
 
             <div class="subsection">
-                <h3>5.1 Pruebas de conectividad</h3>
+                <h3>5.1 Pruebas de conectividad y servicios</h3>
                 <ul class="feature-list check-list">
-                    <li>Comunicación exitosa entre todos los PCs</li>
-                    <li>Resolución DNS funcional</li>
-                    <li>DHCP asigna direcciones sin incidencias</li>
+                    <li>Comunicación entre todos los dispositivos mediante ping</li>
+                    <li>Acceso al servidor y a las carpetas compartidas validado</li>
+                    <li>Funcionamiento de la impresora de red verificado</li>
+                    <li>Acceso a Internet desde los equipos cliente funcional</li>
+                    <li>Verificación del correcto funcionamiento del DHCP y DNS</li>
                 </ul>
             </div>
 
             <div class="subsection">
-                <h3>5.2 Resultados</h3>
+                <h3>5.2 Conclusión del despliegue</h3>
                 <div class="result-banner success">
                     <span class="result-icon">✓</span>
                     <div>
                         <strong>No se detectaron incidencias</strong>
-                        <p>Todas las pruebas completadas satisfactoriamente</p>
+                        <p>La infraestructura configurada proporciona un entorno de coworking estable, seguro y preparado para un uso profesional. Todas las pruebas se realizaron correctamente.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Section 6: Checklist -->
         <section id="checklist" class="manual-section glass-card">
             <div class="section-number">06</div>
             <h2>Checklist de Configuración</h2>
@@ -569,7 +521,6 @@
             </div>
         </section>
 
-        <!-- Back to Home -->
         <div class="back-home">
             <a href="index.html" class="btn btn-primary">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -580,7 +531,6 @@
         </div>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="footer-bottom">
             <p>&copy; 2026 CoWorkTech. Manual Técnico de Configuración.</p>
