@@ -1,58 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Espacio de Coworking Tecnológico - Proyecto Intermodular con alta disponibilidad.">
-    <meta name="author" content="Equipo Scrum CoWorkTech">
-    <title>Coworking Tech Space | Presentación Oficial del Proyecto</title>
-    
+    <meta name="description"
+        content="Proyecto Intermodular - Espacio de Coworking Tecnológico. Diseño, planificación e infraestructura tecnológica completa para un espacio de trabajo colaborativo moderno, eficiente y seguro.">
+    <title>CoWork Tech Space | Proyecto Intermodular de Coworking Tecnológico</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <svg style="display: none;">
-        <symbol id="icon-cpu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
-            <rect x="9" y="9" width="6" height="6"></rect>
-            <line x1="9" y1="1" x2="9" y2="4"></line>
-            <line x1="15" y1="1" x2="15" y2="4"></line>
-            <line x1="9" y1="20" x2="9" y2="23"></line>
-            <line x1="15" y1="20" x2="15" y2="23"></line>
-            <line x1="20" y1="9" x2="23" y2="9"></line>
-            <line x1="20" y1="14" x2="23" y2="14"></line>
-            <line x1="1" y1="9" x2="4" y2="9"></line>
-            <line x1="1" y1="14" x2="4" y2="14"></line>
-        </symbol>
-        <symbol id="icon-wifi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
-            <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
-            <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
-            <line x1="12" y1="20" x2="12.01" y2="20"></line>
-        </symbol>
-        <symbol id="icon-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-        </symbol>
-        <symbol id="icon-server" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-            <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-            <line x1="6" y1="6" x2="6.01" y2="6"></line>
-            <line x1="6" y1="18" x2="6.01" y2="18"></line>
-        </symbol>
-        <symbol id="icon-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-            <circle cx="9" cy="7" r="4"></circle>
-            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-        </symbol>
-        <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="20 6 9 17 4 12"></polyline>
-        </symbol>
-    </svg>
+    <style>
+        /* ── Extra styles for new sections ── */
+        .ods-section { padding: 100px 0; }
+        .ods-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+        .ods-card { padding: 32px; border-radius: 20px; position: relative; overflow: hidden; }
+        .ods-badge { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 16px; background: rgba(99,102,241,0.18); color: #818cf8; }
+        .ods-number { font-size: 56px; font-weight: 800; line-height: 1; background: linear-gradient(135deg,#6366f1,#a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 8px; }
+        .ods-title { font-size: 16px; font-weight: 600; margin-bottom: 10px; color: #e2e8f0; }
+        .ods-desc { font-size: 14px; color: #94a3b8; line-height: 1.7; }
 
+        .security-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+        .security-card { padding: 32px; border-radius: 20px; }
+        .security-card h3 { font-size: 18px; font-weight: 600; margin-bottom: 20px; color: #e2e8f0; display: flex; align-items: center; gap: 12px; }
+        .security-card ul { list-style: none; padding: 0; }
+        .security-card ul li { display: flex; align-items: flex-start; gap: 10px; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 14px; color: #94a3b8; line-height: 1.6; }
+        .security-card ul li:last-child { border-bottom: none; }
+        .sec-icon { color: #6366f1; font-size: 16px; flex-shrink: 0; margin-top: 2px; }
+
+        .budget-full-table { width: 100%; border-collapse: collapse; margin-top: 24px; }
+        .budget-full-table th { background: rgba(99,102,241,0.15); color: #a5b4fc; font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 14px 16px; text-align: left; border-bottom: 1px solid rgba(99,102,241,0.2); }
+        .budget-full-table td { padding: 14px 16px; font-size: 14px; color: #cbd5e1; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .budget-full-table tr:hover td { background: rgba(99,102,241,0.05); }
+        .budget-full-table .total-row td { color: #a5b4fc; font-weight: 700; font-size: 15px; background: rgba(99,102,241,0.1); border-top: 2px solid rgba(99,102,241,0.3); }
+        .budget-section { padding: 100px 0; }
+        .budget-container { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+        .budget-wrapper { padding: 40px; border-radius: 20px; overflow-x: auto; }
+
+        .network-specs { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 24px; }
+        .net-spec-card { background: rgba(99,102,241,0.08); border: 1px solid rgba(99,102,241,0.15); border-radius: 12px; padding: 18px; text-align: center; }
+        .net-spec-label { font-size: 11px; color: #6366f1; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 6px; }
+        .net-spec-value { font-size: 15px; font-weight: 600; color: #e2e8f0; }
+
+        .incidents-section { padding: 100px 0; }
+        .incidents-container { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+        .incidents-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+        @media(max-width:700px) { .incidents-grid { grid-template-columns: 1fr; } }
+        .incident-info-card { padding: 36px; border-radius: 20px; }
+        .incident-field { display: flex; align-items: flex-start; gap: 12px; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+        .incident-field:last-child { border-bottom: none; }
+        .incident-dot { width: 8px; height: 8px; border-radius: 50%; background: #6366f1; flex-shrink: 0; margin-top: 6px; }
+        .incident-text { font-size: 14px; color: #94a3b8; line-height: 1.6; }
+        .incident-text strong { color: #c7d2fe; }
+
+        .sprint-table { width: 100%; border-collapse: collapse; margin-top: 28px; }
+        .sprint-table th { background: rgba(99,102,241,0.15); color: #a5b4fc; font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 14px 18px; text-align: left; border-bottom: 1px solid rgba(99,102,241,0.2); }
+        .sprint-table td { padding: 14px 18px; font-size: 14px; color: #cbd5e1; border-bottom: 1px solid rgba(255,255,255,0.05); vertical-align: top; }
+        .sprint-table tr:hover td { background: rgba(99,102,241,0.05); }
+        .sprint-num { display: inline-block; background: linear-gradient(135deg,#6366f1,#a78bfa); color: #fff; font-weight: 700; font-size: 12px; padding: 3px 10px; border-radius: 20px; }
+
+        .server-specs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 28px; }
+        .server-spec-card { padding: 28px; border-radius: 16px; border: 1px solid rgba(99,102,241,0.12); }
+        .server-spec-card h4 { font-size: 15px; font-weight: 600; color: #a5b4fc; margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+        .server-spec-card ul { list-style: none; padding: 0; }
+        .server-spec-card ul li { font-size: 13px; color: #94a3b8; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.04); display: flex; justify-content: space-between; gap: 12px; }
+        .server-spec-card ul li:last-child { border-bottom: none; }
+        .spec-key { color: #64748b; }
+        .spec-val { color: #cbd5e1; font-weight: 500; text-align: right; }
+    </style>
+</head>
+
+<body>
+    <!-- Animated Background -->
     <div class="animated-bg">
         <div class="blob blob-1"></div>
         <div class="blob blob-2"></div>
@@ -60,6 +82,7 @@
         <div class="blob blob-4"></div>
     </div>
 
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
@@ -69,12 +92,14 @@
             <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#espacios">Espacios</a></li>
+                <li><a href="#equipo">Equipo</a></li>
                 <li><a href="#tecnologia">Tecnología</a></li>
-                <li><a href="#metodologia">Scrum</a></li>
-                <li><a href="#sprints">Sprints</a></li>
-                <li><a href="#presupuesto">Inversión</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="manual.html" class="btn btn-primary" style="padding: 8px 18px; margin-left: 10px;">Ver Manual Técnico</a></li>
+                <li><a href="#seguridad">Seguridad</a></li>
+                <li><a href="#red">Red</a></li>
+                <li><a href="#presupuesto">Presupuesto</a></li>
+                <li><a href="manual.html">Manual Técnico</a></li>
+                <li><a href="#contacto" class="btn-nav">Contactar</a></li>
             </ul>
             <div class="menu-toggle">
                 <span></span>
@@ -84,467 +109,1085 @@
         </div>
     </nav>
 
-    <main class="main-content" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
-        
-        <section id="inicio" class="hero-section" style="padding: 160px 0 80px; text-align: center;">
-            <div class="badge-container" style="margin-bottom: 20px;">
-                <span class="section-tag" style="background: rgba(0,122,255,0.1); color: var(--primary); padding: 8px 20px; border-radius: 25px; font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">
-                    Proyecto Intermodular 2026
-                </span>
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="pulse"></span>
+                <span>Proyecto Intermodular · Coworking Tecnológico</span>
             </div>
-            
-            <h1 class="hero-title" style="font-size: clamp(2.5rem, 5vw, 4.2rem); font-weight: 800; margin: 0 0 20px; line-height: 1.1; letter-spacing: -1px;">
-                Infraestructura para un <br>
-                <span class="gradient-text">Coworking Tecnológico</span>
+            <h1 class="hero-title">
+                Tu Espacio de
+                <span class="gradient-text">Coworking</span>
+                Tecnológico
             </h1>
-            
-            <p class="hero-subtitle" style="font-size: 1.25rem; color: var(--text-secondary); max-width: 800px; margin: 0 auto 40px; line-height: 1.7;">
-                Diseño, planificación y simulación lógica de una red de alta disponibilidad. Creamos un entorno colaborativo estable, eficiente y altamente securizado para desarrolladores y nómadas digitales.
+            <p class="hero-subtitle">
+                Diseñamos la infraestructura tecnológica completa de un espacio de coworking moderno.
+                Red LAN, servidores, seguridad informática y gestión ágil con metodología Scrum.
             </p>
-            
-            <div class="hero-actions" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-                <a href="#tecnologia" class="btn btn-primary" style="padding: 14px 32px; font-size: 1.05rem;">
-                    Explorar Infraestructura
+            <div class="hero-buttons">
+                <a href="#espacios" class="btn btn-primary">
+                    <span>Explorar Espacios</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
                 </a>
-                <a href="manual.html" class="btn glass-card" style="padding: 14px 32px; font-size: 1.05rem; color: var(--text-primary);">
-                    Documentación de Red
-                </a>
+                <a href="#servicios" class="btn btn-secondary">Ver Servicios</a>
             </div>
-
-            <div class="stats-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; margin-top: 60px;">
-                <div class="stat-card glass-card" style="padding: 25px; border-radius: 16px; text-align: center;">
-                    <div class="stat-number" style="font-size: 2.5rem; font-weight: 700; color: var(--primary); margin-bottom: 5px;">14</div>
-                    <div class="stat-label" style="font-size: 0.95rem; color: var(--text-secondary); font-weight: 500;">Estaciones Fijas</div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">14</span>
+                    <span class="stat-label">Estaciones de trabajo</span>
                 </div>
-                <div class="stat-card glass-card" style="padding: 25px; border-radius: 16px; text-align: center;">
-                    <div class="stat-number" style="font-size: 2.5rem; font-weight: 700; color: var(--accent); margin-bottom: 5px;">7</div>
-                    <div class="stat-label" style="font-size: 0.95rem; color: var(--text-secondary); font-weight: 500;">Sprints Completados</div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Acceso completo</span>
                 </div>
-                <div class="stat-card glass-card" style="padding: 25px; border-radius: 16px; text-align: center;">
-                    <div class="stat-number" style="font-size: 2.5rem; font-weight: 700; color: var(--success); margin-bottom: 5px;">3</div>
-                    <div class="stat-label" style="font-size: 0.95rem; color: var(--text-secondary); font-weight: 500;">Servicios Centrales</div>
+                <div class="stat-item">
+                    <span class="stat-number">7</span>
+                    <span class="stat-label">Sprints Scrum</span>
                 </div>
-                <div class="stat-card glass-card" style="padding: 25px; border-radius: 16px; text-align: center;">
-                    <div class="stat-number" style="font-size: 2.5rem; font-weight: 700; color: var(--primary-light); margin-bottom: 5px;">100%</div>
-                    <div class="stat-label" style="font-size: 0.95rem; color: var(--text-secondary); font-weight: 500;">Simulación Exitosa</div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Conectividad</span>
                 </div>
             </div>
-        </section>
-
-        <section id="servicios" class="section-padding" style="padding: 80px 0;">
-            <div class="section-header" style="text-align: center; margin-bottom: 50px;">
-                <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 15px;">Catálogo de Servicios</h2>
-                <p style="color: var(--text-secondary); max-width: 650px; margin: 0 auto; font-size: 1.1rem;">
-                    Nuestro modelo de negocio se divide en tres niveles de servicio, diseñados para cubrir las necesidades operativas de profesionales IT y PYMES.
-                </p>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-card card-1">
+                <div class="card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <path
+                            d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
+                        <path
+                            d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
+                        <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
+                        <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+                    </svg>
+                </div>
+                <span>Startups</span>
             </div>
-            
-            <div class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
-                
-                <div class="service-card glass-card" style="padding: 40px; border-radius: 20px; transition: transform 0.3s ease;">
-                    <div class="service-icon" style="width: 50px; height: 50px; background: rgba(0,122,255,0.1); color: var(--primary); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-                        <svg width="28" height="28"><use href="#icon-users"></use></svg>
-                    </div>
-                    <h3 style="font-size: 1.5rem; margin-bottom: 15px; font-weight: 600;">Servicios Básicos</h3>
-                    <p style="color: var(--text-secondary); margin-bottom: 20px; line-height: 1.6;">
-                        Infraestructura esencial para el trabajo diario, orientada a la comodidad y la flexibilidad del coworker.
-                    </p>
-                    <ul class="feature-list" style="list-style: none; padding: 0; margin: 0;">
-                        <li style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px;">
-                            <svg width="18" height="18" style="color: var(--success); flex-shrink: 0; margin-top: 3px;"><use href="#icon-check"></use></svg>
-                            <span style="color: var(--text-primary);">Puestos de trabajo flexibles y fijos.</span>
-                        </li>
-                        <li style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px;">
-                            <svg width="18" height="18" style="color: var(--success); flex-shrink: 0; margin-top: 3px;"><use href="#icon-check"></use></svg>
-                            <span style="color: var(--text-primary);">Oficinas privadas y salas de reuniones.</span>
-                        </li>
-                        <li style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px;">
-                            <svg width="18" height="18" style="color: var(--success); flex-shrink: 0; margin-top: 3px;"><use href="#icon-check"></use></svg>
-                            <span style="color: var(--text-primary);">Internet de alta velocidad simétrico.</span>
-                        </li>
-                    </ul>
+            <div class="floating-card card-2">
+                <div class="card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <path d="M16 18V6H8v12" />
+                        <rect x="4" y="6" width="16" height="12" rx="2" />
+                        <line x1="2" y1="20" x2="22" y2="20" />
+                    </svg>
                 </div>
-
-                <div class="service-card glass-card" style="padding: 40px; border-radius: 20px; position: relative; overflow: hidden;">
-                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: var(--gradient-primary);"></div>
-                    
-                    <div class="service-icon" style="width: 50px; height: 50px; background: rgba(0,122,255,0.1); color: var(--primary); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-                        <svg width="28" height="28"><use href="#icon-cpu"></use></svg>
-                    </div>
-                    <h3 style="font-size: 1.5rem; margin-bottom: 15px; font-weight: 600;">Valor Añadido Técnico</h3>
-                    <p style="color: var(--text-secondary); margin-bottom: 20px; line-height: 1.6;">
-                        Ventajas competitivas enfocadas en la tecnología, conectividad dedicada y herramientas de software.
-                    </p>
-                    <ul class="feature-list" style="list-style: none; padding: 0; margin: 0;">
-                        <li style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px;">
-                            <svg width="18" height="18" style="color: var(--success); flex-shrink: 0; margin-top: 3px;"><use href="#icon-check"></use></svg>
-                            <span style="color: var(--text-primary);">Tomas de red RJ45 dedicadas por usuario.</span>
-                        </li>
-                        <li style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px;">
-                            <svg width="18" height="18" style="color: var(--success); flex-shrink: 0; margin-top: 3px;"><use href="#icon-check"></use></svg>
-                            <span style="color: var(--text-primary);">App móvil propia para reservas rápidas.</span>
-                        </li>
-                        <li style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px;">
-                            <svg width="18" height="18" style="color: var(--success); flex-shrink: 0; margin-top: 3px;"><use href="#icon-check"></use></svg>
-                            <span style="color: var(--text-primary);">Eventos y talleres tecnológicos semanales.</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="service-card glass-card" style="padding: 40px; border-radius: 20px;">
-                    <div class="service-icon" style="width: 50px; height: 50px; background: rgba(0,122,255,0.1); color: var(--primary); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-                        <svg width="28" height="28"><use href="#icon-server"></use></svg>
-                    </div>
-                    <h3 style="font-size: 1.5rem; margin-bottom: 15px; font-weight: 600;">Complementarios</h3>
-                    <p style="color: var(--text-secondary); margin-bottom: 20px; line-height: 1.6;">
-                        Servicios logísticos periféricos para facilitar el día a día de las empresas alojadas.
-                    </p>
-                    <ul class="feature-list" style="list-style: none; padding: 0; margin: 0;">
-                        <li style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px;">
-                            <svg width="18" height="18" style="color: var(--success); flex-shrink: 0; margin-top: 3px;"><use href="#icon-check"></use></svg>
-                            <span style="color: var(--text-primary);">Taquillas seguras con cierre electrónico.</span>
-                        </li>
-                        <li style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px;">
-                            <svg width="18" height="18" style="color: var(--success); flex-shrink: 0; margin-top: 3px;"><use href="#icon-check"></use></svg>
-                            <span style="color: var(--text-primary);">Servicio de catering para reuniones.</span>
-                        </li>
-                        <li style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px;">
-                            <svg width="18" height="18" style="color: var(--success); flex-shrink: 0; margin-top: 3px;"><use href="#icon-check"></use></svg>
-                            <span style="color: var(--text-primary);">Alianzas corporativas locales.</span>
-                        </li>
-                    </ul>
-                </div>
-
+                <span>Developers</span>
             </div>
-        </section>
+            <div class="floating-card card-3">
+                <div class="card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <circle cx="13.5" cy="6.5" r="2.5" />
+                        <circle cx="19" cy="17" r="2" />
+                        <circle cx="6" cy="12" r="3" />
+                        <path d="M13.5 9v3l4 5" />
+                        <path d="M6 15l4-1 3.5-4.5" />
+                    </svg>
+                </div>
+                <span>Creativos</span>
+            </div>
+            <div class="floating-card card-4">
+                <div class="card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <line x1="12" y1="20" x2="12" y2="10" />
+                        <line x1="18" y1="20" x2="18" y2="4" />
+                        <line x1="6" y1="20" x2="6" y2="14" />
+                    </svg>
+                </div>
+                <span>Business</span>
+            </div>
+        </div>
+    </section>
 
-        <section id="tecnologia" class="section-padding" style="padding: 80px 0;">
-            <div class="section-header" style="text-align: center; margin-bottom: 50px;">
-                <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 15px;">Stack Tecnológico</h2>
-                <p style="color: var(--text-secondary); max-width: 700px; margin: 0 auto; font-size: 1.1rem;">
-                    Arquitectura de hardware y software seleccionada para garantizar alta disponibilidad, escalabilidad y un entorno libre de caídas.
-                </p>
+    <!-- Services Section -->
+    <section id="servicios" class="services">
+        <div class="section-header">
+            <span class="section-tag">Servicios</span>
+            <h2 class="section-title">Todo lo que necesitas para <span class="gradient-text">trabajar mejor</span></h2>
+            <p class="section-subtitle">Suite completa de servicios para autónomos, startups y empresas</p>
+        </div>
+
+        <div class="services-grid">
+            <!-- Servicios Básicos -->
+            <div class="service-category glass-card">
+                <div class="category-header">
+                    <div class="category-icon basic">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2" />
+                            <path d="M8 21h8M12 17v4" />
+                        </svg>
+                    </div>
+                    <h3>Servicios Básicos</h3>
+                </div>
+                <ul class="service-list">
+                    <li><span class="check-icon">✓</span> Puestos de trabajo flexibles y fijos</li>
+                    <li><span class="check-icon">✓</span> Oficinas privadas para equipos o empresas</li>
+                    <li><span class="check-icon">✓</span> Salas de reuniones y cabinas de llamadas</li>
+                    <li><span class="check-icon">✓</span> Internet de alta velocidad y equipamiento de oficina</li>
+                    <li><span class="check-icon">✓</span> Limpieza, mantenimiento y climatización</li>
+                    <li><span class="check-icon">✓</span> Seguridad y acceso 24/7</li>
+                    <li><span class="check-icon">✓</span> Recepción, mensajería y domiciliación de empresas</li>
+                </ul>
             </div>
 
-            <div class="tech-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
-                
-                <div class="tech-box glass-card" style="padding: 35px; border-radius: 20px;">
-                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
-                        <svg width="24" height="24" style="color: var(--primary);"><use href="#icon-cpu"></use></svg>
-                        <h3 style="font-size: 1.3rem; margin: 0;">Estaciones de Trabajo</h3>
+            <!-- Servicios de Valor Añadido -->
+            <div class="service-category glass-card featured">
+                <div class="featured-badge">Popular</div>
+                <div class="category-header">
+                    <div class="category-icon premium">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
                     </div>
-                    <ul style="list-style: none; padding: 0; margin: 0; color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;">
-                        <li style="margin-bottom: 8px;"><strong style="color: var(--text-primary);">Hardware:</strong> 14x Dell OptiPlex 3060 SFF.</li>
-                        <li style="margin-bottom: 8px;"><strong style="color: var(--text-primary);">Procesamiento:</strong> Intel Core i5-8500T, 16GB RAM.</li>
-                        <li style="margin-bottom: 8px;"><strong style="color: var(--text-primary);">Almacenamiento:</strong> 512GB SSD NVMe.</li>
-                        <li style="margin-bottom: 8px;"><strong style="color: var(--text-primary);">SO:</strong> Windows 11 Pro instalado de cero.</li>
-                        <li style="margin-bottom: 8px;"><strong style="color: var(--text-primary);">Periféricos:</strong> Monitores 24", Logitech MX Keys S.</li>
-                    </ul>
+                    <h3>Valor Añadido</h3>
                 </div>
-
-                <div class="tech-box glass-card" style="padding: 35px; border-radius: 20px;">
-                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
-                        <svg width="24" height="24" style="color: var(--primary-light);"><use href="#icon-wifi"></use></svg>
-                        <h3 style="font-size: 1.3rem; margin: 0;">Infraestructura de Red</h3>
-                    </div>
-                    <ul style="list-style: none; padding: 0; margin: 0; color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;">
-                        <li style="margin-bottom: 8px;"><strong style="color: var(--text-primary);">Router/Firewall:</strong> Ubiquiti UniFi Security Gateway.</li>
-                        <li style="margin-bottom: 8px;"><strong style="color: var(--text-primary);">Conmutación:</strong> Switch TP-Link TL-SG1024DE.</li>
-                        <li style="margin-bottom: 8px;"><strong style="color: var(--text-primary);">Direccionamiento:</strong> Red 192.168.1.0/24 (DHCP/Estático).</li>
-                        <li style="margin-bottom: 8px;"><strong style="color: var(--text-primary);">Inalámbrico:</strong> Puntos de acceso Wi-Fi 6.</li>
-                        <li style="margin-bottom: 8px;"><strong style="color: var(--text-primary);">Protección:</strong> SAI APC Back-UPS 1500VA.</li>
-                    </ul>
-                </div>
-
-                <div class="tech-box glass-card" style="padding: 35px; border-radius: 20px;">
-                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
-                        <svg width="24" height="24" style="color: var(--accent);"><use href="#icon-shield"></use></svg>
-                        <h3 style="font-size: 1.3rem; margin: 0;">Servidores y Seguridad</h3>
-                    </div>
-                    <ul style="list-style: none; padding: 0; margin: 0; color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;">
-                        <li style="margin-bottom: 8px;"><strong style="color: var(--text-primary);">Servidor Dominio:</strong> HP ProLiant MicroServer Gen10+ (Windows Server 2022).</li>
-                        <li style="margin-bottom: 8px;"><strong style="color: var(--text-primary);">NAS y Backups:</strong> Synology DS923+ (Veeam Backup).</li>
-                        <li style="margin-bottom: 8px;"><strong style="color: var(--text-primary);">Seguridad Wi-Fi:</strong> Protocolo cifrado WPA3.</li>
-                        <li style="margin-bottom: 8px;"><strong style="color: var(--text-primary);">Hardware Security:</strong> TPM 2.0 y Secure Boot.</li>
-                        <li style="margin-bottom: 8px;"><strong style="color: var(--text-primary);">Endpoint:</strong> Bitdefender GravityZone.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="ods" class="section-padding" style="padding: 60px 0;">
-            <div class="glass-card" style="padding: 40px; border-radius: 24px; background: rgba(52, 199, 89, 0.03); border: 1px solid rgba(52, 199, 89, 0.15);">
-                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
-                    <span style="font-size: 2rem;">🌱</span>
-                    <h3 style="font-size: 1.8rem; font-weight: 700; color: var(--success); margin: 0;">Compromiso ODS</h3>
-                </div>
-                <p style="margin-bottom: 25px; line-height: 1.6; color: var(--text-primary);">
-                    Nuestro proyecto integra políticas activas basadas en la guía de los Objetivos de Desarrollo Sostenible de la ONU:
-                </p>
-                <div class="ods-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px;">
-                    <div>
-                        <h4 style="font-weight: 600; margin-bottom: 8px;">ODS 8: Trabajo Decente</h4>
-                        <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.5;">Impulso a startups mediante networking estructurado.</p>
-                    </div>
-                    <div>
-                        <h4 style="font-weight: 600; margin-bottom: 8px;">ODS 11: Ciudades Sostenibles</h4>
-                        <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.5;">Movilidad limpia con parkings para patinetes eléctricos.</p>
-                    </div>
-                    <div>
-                        <h4 style="font-weight: 600; margin-bottom: 8px;">ODS 13: Acción Climática</h4>
-                        <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.5;">Política de "Papel Cero" y apagado automático de PCs.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="metodologia" class="section-padding" style="padding: 80px 0;">
-            <div class="section-header" style="text-align: center; margin-bottom: 50px;">
-                <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 15px;">Metodología Scrum y Equipo</h2>
-                <p style="color: var(--text-secondary); max-width: 700px; margin: 0 auto; font-size: 1.1rem;">
-                    Hemos organizado el proyecto bajo un marco ágil para adaptarnos a los imprevistos técnicos y mantener un flujo de entrega de valor constante.
-                </p>
+                <ul class="service-list">
+                    <li><span class="check-icon">✓</span> Zonas comunes: cocina, cafetería, lounge y terraza</li>
+                    <li><span class="check-icon">✓</span> Eventos de networking, talleres y actividades</li>
+                    <li><span class="check-icon">✓</span> Programas de bienestar: yoga, mindfulness, gimnasios</li>
+                    <li><span class="check-icon">✓</span> Asesoría legal, contable y mentoring empresarial</li>
+                    <li><span class="check-icon">✓</span> Planes flexibles: por hora, día o mes</li>
+                    <li><span class="check-icon">✓</span> App digital para reservas, pagos y comunicación</li>
+                    <li><span class="check-icon">✓</span> Conectividad RJ45 dedicada por puesto (switch gestionable)</li>
+                </ul>
             </div>
 
-            <div class="team-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px;">
-                
-                <div class="team-member glass-card" style="padding: 30px; text-align: center; border-radius: 20px;">
-                    <div style="width: 70px; height: 70px; background: var(--gradient-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.2rem; margin: 0 auto 15px;">JDC</div>
-                    <h3 style="font-size: 1.2rem; margin-bottom: 5px;">Juan Diego Casado</h3>
-                    <span style="color: var(--primary); font-weight: 600; font-size: 0.9rem; display: block; margin-bottom: 15px;">Product Owner & SysAdmin</span>
-                    <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
-                        Gestión del Backlog, priorización de requisitos técnicos y administración de Windows Server.
-                    </p>
+            <!-- Servicios Complementarios -->
+            <div class="service-category glass-card">
+                <div class="category-header">
+                    <div class="category-icon complement">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                            <path d="M2 17l10 5 10-5" />
+                            <path d="M2 12l10 5 10-5" />
+                        </svg>
+                    </div>
+                    <h3>Complementarios</h3>
                 </div>
+                <ul class="service-list">
+                    <li><span class="check-icon">✓</span> Catering y café para eventos</li>
+                    <li><span class="check-icon">✓</span> Taquillas y espacios de almacenamiento</li>
+                    <li><span class="check-icon">✓</span> Alquiler de espacios para eventos externos</li>
+                    <li><span class="check-icon">✓</span> Alianzas con negocios locales (cafeterías, gimnasios)</li>
+                    <li><span class="check-icon">✓</span> Sostenibilidad: mobiliario reciclado y climatización eficiente</li>
+                    <li><span class="check-icon">✓</span> Apagado programado de equipos y reciclaje electrónico</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-                <div class="team-member glass-card" style="padding: 30px; text-align: center; border-radius: 20px;">
-                    <div style="width: 70px; height: 70px; background: var(--gradient-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.2rem; margin: 0 auto 15px;">JSF</div>
-                    <h3 style="font-size: 1.2rem; margin-bottom: 5px;">José Sebastián Fdez.</h3>
-                    <span style="color: var(--primary); font-weight: 600; font-size: 0.9rem; display: block; margin-bottom: 15px;">Scrum Master & Redes</span>
-                    <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
-                        Facilitador de Scrum, resolución de bloqueos y despliegue lógico de la infraestructura.
-                    </p>
+    <!-- ODS Section -->
+    <section id="ods" class="ods-section">
+        <div class="section-header">
+            <span class="section-tag">Sostenibilidad</span>
+            <h2 class="section-title">Objetivos de <span class="gradient-text">Desarrollo Sostenible</span></h2>
+            <p class="section-subtitle">Comprometidos con la sostenibilidad y el impacto social positivo</p>
+        </div>
+        <div class="ods-grid">
+            <div class="ods-card glass-card">
+                <div class="ods-badge">ODS</div>
+                <div class="ods-number">8</div>
+                <div class="ods-title">Trabajo decente y crecimiento económico</div>
+                <p class="ods-desc">Fomentamos el crecimiento de startups mediante programas de mentoring y eventos de networking semanales que conectan talento joven con inversores.</p>
+            </div>
+            <div class="ods-card glass-card">
+                <div class="ods-badge">ODS</div>
+                <div class="ods-number">11</div>
+                <div class="ods-title">Ciudades y comunidades sostenibles</div>
+                <p class="ods-desc">El edificio cuenta con plazas de parking para patinetes eléctricos y cargadores para coches Tesla y otros vehículos eléctricos, fomentando la movilidad de baja emisión.</p>
+            </div>
+            <div class="ods-card glass-card">
+                <div class="ods-badge">ODS</div>
+                <div class="ods-number">13</div>
+                <div class="ods-title">Acción por el clima</div>
+                <p class="ods-desc">Certificado LEED Platinum en Barcelona y política de "Papel Cero": todos los contratos y procesos administrativos se digitalizan mediante la aplicación móvil propia.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spaces Section -->
+    <section id="espacios" class="spaces">
+        <div class="section-header">
+            <span class="section-tag">Espacios</span>
+            <h2 class="section-title">Diseñado para la <span class="gradient-text">productividad</span></h2>
+            <p class="section-subtitle">Espacios diferenciados para cada tipo de necesidad profesional</p>
+        </div>
+
+        <div class="spaces-showcase">
+            <div class="space-card glass-card">
+                <div class="space-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <rect x="2" y="3" width="20" height="14" rx="2" />
+                        <path d="M8 21h8M12 17v4" />
+                    </svg>
                 </div>
-
-                <div class="team-member glass-card" style="padding: 30px; text-align: center; border-radius: 20px;">
-                    <div style="width: 70px; height: 70px; background: var(--gradient-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.2rem; margin: 0 auto 15px;">NHV</div>
-                    <h3 style="font-size: 1.2rem; margin-bottom: 5px;">Nicolás Hidalgo</h3>
-                    <span style="color: var(--primary); font-weight: 600; font-size: 0.9rem; display: block; margin-bottom: 15px;">Ciberseguridad y Software</span>
-                    <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
-                        Políticas de seguridad GPO, implementación de backups automáticos y firewall perimetral.
-                    </p>
-                </div>
-
-                <div class="team-member glass-card" style="padding: 30px; text-align: center; border-radius: 20px;">
-                    <div style="width: 70px; height: 70px; background: var(--gradient-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.2rem; margin: 0 auto 15px;">GAG</div>
-                    <h3 style="font-size: 1.2rem; margin-bottom: 5px;">Gerardo Aranda</h3>
-                    <span style="color: var(--primary); font-weight: 600; font-size: 0.9rem; display: block; margin-bottom: 15px;">Técnico Hardware</span>
-                    <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
-                        Instalación física, montaje de rack, cableado estructurado y configuración de periféricos.
-                    </p>
+                <h3>Zona de Trabajo</h3>
+                <p>14 estaciones Dell OptiPlex 3060 SFF con conexión RJ45 dedicada a switch gestionable. Apagado programado a las 20:00h e iluminación LED con sensores.</p>
+                <div class="space-features">
+                    <span>Intel i5-8500T</span>
+                    <span>16GB RAM</span>
+                    <span>512GB SSD</span>
                 </div>
             </div>
-        </section>
 
-        <section id="sprints" class="section-padding" style="padding: 60px 0;">
-            <div class="section-header" style="text-align: center; margin-bottom: 50px;">
-                <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 15px;">Plan de Trabajo: Los 7 Sprints</h2>
-                <p style="color: var(--text-secondary); max-width: 700px; margin: 0 auto; font-size: 1.1rem;">
-                    Resumen de la evolución del proyecto, estructurado temporalmente para asegurar la calidad final de la infraestructura y la documentación.
-                </p>
-            </div>
-
-            <div class="timeline-container" style="display: flex; flex-direction: column; gap: 20px; max-width: 850px; margin: 0 auto;">
-                
-                <div class="glass-card" style="padding: 25px; border-radius: 16px; position: relative; border-left: 5px solid var(--primary);">
-                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 12px;">
-                        <h3 style="font-size: 1.25rem; font-weight: 600; margin: 0;">Sprint 1: Diagnóstico y Planificación</h3>
-                        <span style="font-size: 0.9rem; color: var(--text-primary); font-weight: 500; background: rgba(0,0,0,0.05); padding: 4px 12px; border-radius: 12px;">10 nov - 30 nov</span>
-                    </div>
-                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0;">
-                        Auditoría inicial de requisitos técnicos. Creación del Product Backlog, establecimiento de roles dentro del equipo y definición de la visión del negocio.
-                    </p>
+            <div class="space-card glass-card">
+                <div class="space-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                        <circle cx="9" cy="7" r="4" />
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    </svg>
                 </div>
-
-                <div class="glass-card" style="padding: 25px; border-radius: 16px; position: relative; border-left: 5px solid var(--primary-light);">
-                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 12px;">
-                        <h3 style="font-size: 1.25rem; font-weight: 600; margin: 0;">Sprint 2: Diseño de Red e Infraestructura</h3>
-                        <span style="font-size: 0.9rem; color: var(--text-primary); font-weight: 500; background: rgba(0,0,0,0.05); padding: 4px 12px; border-radius: 12px;">1 dic - 21 dic</span>
-                    </div>
-                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0;">
-                        Elaboración del diseño lógico (topología en estrella). Definición del esquema de direccionamiento IP (segmento 192.168.1.0/24) y planificación física del Rack.
-                    </p>
-                </div>
-
-                <div class="glass-card" style="padding: 25px; border-radius: 16px; position: relative; border-left: 5px solid var(--accent);">
-                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 12px;">
-                        <h3 style="font-size: 1.25rem; font-weight: 600; margin: 0;">Sprint 3: Configuración Base y Seguridad</h3>
-                        <span style="font-size: 0.9rem; color: var(--text-primary); font-weight: 500; background: rgba(0,0,0,0.05); padding: 4px 12px; border-radius: 12px;">22 dic - 12 ene</span>
-                    </div>
-                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0;">
-                        Instalación de Windows 11 Pro y Windows Server 2022. Despliegue de seguridad perimetral, configuración de Firewall y habilitación de cifrado inalámbrico WPA3.
-                    </p>
-                </div>
-
-                <div class="glass-card" style="padding: 25px; border-radius: 16px; position: relative; border-left: 5px solid var(--success);">
-                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 12px;">
-                        <h3 style="font-size: 1.25rem; font-weight: 600; margin: 0;">Sprint 4: Simulación y Packet Tracer</h3>
-                        <span style="font-size: 0.9rem; color: var(--text-primary); font-weight: 500; background: rgba(0,0,0,0.05); padding: 4px 12px; border-radius: 12px;">13 ene - 9 feb</span>
-                    </div>
-                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0;">
-                        Construcción virtual del entorno de red. Verificación del enrutamiento interno y validación de los servicios básicos de infraestructura (DHCP y resolución DNS).
-                    </p>
-                </div>
-
-                <div class="glass-card" style="padding: 25px; border-radius: 16px; position: relative; border-left: 5px solid var(--warning);">
-                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 12px;">
-                        <h3 style="font-size: 1.25rem; font-weight: 600; margin: 0;">Sprint 5: Troubleshooting y Políticas GPO</h3>
-                        <span style="font-size: 0.9rem; color: var(--text-primary); font-weight: 500; background: rgba(0,0,0,0.05); padding: 4px 12px; border-radius: 12px;">10 feb - 9 mar</span>
-                    </div>
-                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0;">
-                        Diagnóstico activo de fallos en simulación. Refinamiento de Active Directory y despliegue de políticas corporativas GPO para los clientes de red.
-                    </p>
-                </div>
-
-                <div class="glass-card" style="padding: 25px; border-radius: 16px; position: relative; border-left: 5px solid var(--primary);">
-                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 12px;">
-                        <h3 style="font-size: 1.25rem; font-weight: 600; margin: 0;">Sprint 6: Documentación Técnica</h3>
-                        <span style="font-size: 0.9rem; color: var(--text-primary); font-weight: 500; background: rgba(0,0,0,0.05); padding: 4px 12px; border-radius: 12px;">10 mar - 13 abr</span>
-                    </div>
-                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0;">
-                        Redacción del manual técnico definitivo de configuración, esquematización de los protocolos de mantenimiento y diseño del sistema de incidencias.
-                    </p>
-                </div>
-
-                <div class="glass-card" style="padding: 25px; border-radius: 16px; position: relative; border-left: 5px solid var(--accent);">
-                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 12px;">
-                        <h3 style="font-size: 1.25rem; font-weight: 600; margin: 0;">Sprint 7: Revisión Final y Entrega</h3>
-                        <span style="font-size: 0.9rem; color: var(--text-primary); font-weight: 500; background: rgba(0,0,0,0.05); padding: 4px 12px; border-radius: 12px;">14 abr - 26 may</span>
-                    </div>
-                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0;">
-                        Celebración de la Sprint Review. Corrección final de errores documentales auditados y empaquetado del proyecto para su defensa oral ante tribunal.
-                    </p>
+                <h3>Salas de Reuniones</h3>
+                <p>Espacios privados equipados para videoconferencias y presentaciones. Cabinas de llamadas insonorizadas disponibles para trabajo individual o reuniones pequeñas.</p>
+                <div class="space-features">
+                    <span>Pantallas HD</span>
+                    <span>Audio Pro</span>
+                    <span>Pizarra</span>
                 </div>
             </div>
-        </section>
 
-        <section id="presupuesto" class="section-padding" style="padding: 60px 0;">
-            <div class="tech-budget glass-card" style="max-width: 750px; margin: 0 auto; padding: 40px; border-radius: 24px;">
-                <h3 style="font-size: 1.8rem; font-weight: 700; text-align: center; margin-bottom: 25px;">Presupuesto de Inversión Tecnológica</h3>
-                
-                <div class="budget-items" style="display: flex; flex-direction: column; gap: 14px;">
-                    <div style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(0,0,0,0.08); padding-bottom: 8px;">
-                        <span style="color: var(--text-primary); font-size: 0.95rem;">14× Dell OptiPlex 3060 SFF (Core i5, 16GB, 512GB SSD)</span>
-                        <span style="font-weight: 600;">3.500,00 €</span>
-                    </div>
-                    <div style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(0,0,0,0.08); padding-bottom: 8px;">
-                        <span style="color: var(--text-primary); font-size: 0.95rem;">14× Monitores 24" Full HD y Periféricos Logitech (MX Keys + M650)</span>
-                        <span style="font-weight: 600;">3.093,86 €</span>
-                    </div>
-                    <div style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(0,0,0,0.08); padding-bottom: 8px;">
-                        <span style="color: var(--text-primary); font-size: 0.95rem;">Servidor HP ProLiant MicroServer + NAS Synology DS923+</span>
-                        <span style="font-weight: 600;">1.550,00 €</span>
-                    </div>
-                    <div style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(0,0,0,0.08); padding-bottom: 8px;">
-                        <span style="color: var(--text-primary); font-size: 0.95rem;">Equipos de Red (Router Ubiquiti, Switch TP-Link, SAI, Rack, Impresora)</span>
-                        <span style="font-weight: 600;">870,00 €</span>
-                    </div>
-                    <div style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(0,0,0,0.08); padding-bottom: 8px;">
-                        <span style="color: var(--text-primary); font-size: 0.95rem;">Licencias (Windows Server, Microsoft 365, Bitdefender, Veeam)</span>
-                        <span style="font-weight: 600;">3.116,00 €</span>
-                    </div>
-                    
-                    <div style="display: flex; justify-content: space-between; font-weight: 700; font-size: 1.3rem; margin-top: 20px; color: var(--primary);">
-                        <span>Total de la Inversión</span>
-                        <span>12.129,86 €</span>
-                    </div>
+            <div class="space-card glass-card">
+                <div class="space-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
+                        <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
+                        <line x1="6" y1="1" x2="6" y2="4" />
+                        <line x1="10" y1="1" x2="10" y2="4" />
+                        <line x1="14" y1="1" x2="14" y2="4" />
+                    </svg>
+                </div>
+                <h3>Zonas Comunes</h3>
+                <p>Cocina, cafetería, lounge y terraza para descanso y networking. Zona de impresión centralizada compartida con HP LaserJet Pro MFP en red.</p>
+                <div class="space-features">
+                    <span>Café Premium</span>
+                    <span>Lounge</span>
+                    <span>Terraza</span>
                 </div>
             </div>
-        </section>
 
-        <section id="contacto" class="section-padding" style="padding: 60px 0 100px;">
-            <div class="glass-card" style="max-width: 650px; margin: 0 auto; padding: 40px; border-radius: 24px;">
-                <div style="text-align: center; margin-bottom: 30px;">
-                    <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 10px;">Contacta con Sistemas</h2>
-                    <p style="color: var(--text-secondary); font-size: 0.95rem;">
-                        ¿Dudas sobre conectividad, reservas o incidencias? Abre un ticket de soporte.
-                    </p>
+            <div class="space-card glass-card">
+                <div class="space-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <rect x="4" y="4" width="16" height="16" rx="2" />
+                        <rect x="9" y="9" width="6" height="6" />
+                        <path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3" />
+                    </svg>
                 </div>
-                
-                <form class="contact-form" action="#" method="POST" style="display: flex; flex-direction: column; gap: 20px;">
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-                        <div style="display: flex; flex-direction: column; gap: 8px;">
-                            <label for="name" style="font-size: 0.9rem; font-weight: 600;">Nombre Completo</label>
-                            <input type="text" id="name" name="name" required style="padding: 12px; border-radius: 8px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.5);">
+                <h3>Zona Técnica (Rack)</h3>
+                <p>Armario rack 19" de 12U con ventilación que aloja el servidor HP ProLiant MicroServer Gen10+, NAS Synology DS923+, switch TP-Link gestionable y router Ubiquiti UniFi.</p>
+                <div class="space-features">
+                    <span>Rack 19" 12U</span>
+                    <span>Wi-Fi 6</span>
+                    <span>SAI 1500VA</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="equipo" class="team">
+        <div class="section-header">
+            <span class="section-tag">Equipo</span>
+            <h2 class="section-title">Conoce a nuestro <span class="gradient-text">equipo</span></h2>
+            <p class="section-subtitle">Profesionales comprometidos con la infraestructura tecnológica del proyecto</p>
+        </div>
+
+        <div class="team-grid">
+            <div class="team-member glass-card">
+                <div class="member-avatar">
+                    <div class="avatar-placeholder">JSF</div>
+                </div>
+                <h3>José Sebastián Fernández Muñoz</h3>
+                <span class="member-role">Scrum Master · Ingeniero de Infraestructura y Redes</span>
+                <p>Supervisa la metodología Scrum, coordina al equipo y planifica la arquitectura de red, asegurando la conectividad y eficiencia de los procesos de comunicación interna.</p>
+                <div class="member-tags">
+                    <span>Scrum Master</span>
+                    <span>Redes</span>
+                    <span>Infraestructura</span>
+                </div>
+            </div>
+
+            <div class="team-member glass-card">
+                <div class="member-avatar">
+                    <div class="avatar-placeholder">JDC</div>
+                </div>
+                <h3>Juan Diego Casado Berrocal</h3>
+                <span class="member-role">Product Owner · Administrador de Sistemas (SysAdmin)</span>
+                <p>Define los requisitos técnicos del proyecto y prioriza tareas. Administra servidores, software de gestión y seguridad de red, garantizando la continuidad operativa.</p>
+                <div class="member-tags">
+                    <span>Product Owner</span>
+                    <span>SysAdmin</span>
+                    <span>IT</span>
+                </div>
+            </div>
+
+            <div class="team-member glass-card">
+                <div class="member-avatar">
+                    <div class="avatar-placeholder">GAG</div>
+                </div>
+                <h3>Gerardo Aranda Granja</h3>
+                <span class="member-role">Técnico de Despliegue de Hardware y Mantenimiento</span>
+                <p>Configura físicamente los 14 equipos, periféricos y sistemas de impresión. Lidera la fase de instalación técnica y establece protocolos de mantenimiento preventivo.</p>
+                <div class="member-tags">
+                    <span>Hardware</span>
+                    <span>Despliegue</span>
+                    <span>Mantenimiento</span>
+                </div>
+            </div>
+
+            <div class="team-member glass-card">
+                <div class="member-avatar">
+                    <div class="avatar-placeholder">NHV</div>
+                </div>
+                <h3>Nicolás Hidalgo Vela</h3>
+                <span class="member-role">Responsable de Software y Ciberseguridad</span>
+                <p>Dirige la configuración de Windows 11 Pro y las soluciones de ciberseguridad. Gestiona copias de seguridad, protección de datos y validación de servicios digitales.</p>
+                <div class="member-tags">
+                    <span>Ciberseguridad</span>
+                    <span>Software</span>
+                    <span>Backups</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="tecnologia" class="technology">
+        <div class="section-header">
+            <span class="section-tag">Tecnología</span>
+            <h2 class="section-title">Infraestructura de <span class="gradient-text">última generación</span></h2>
+            <p class="section-subtitle">Equipamiento profesional Dell OptiPlex 3060 SFF con Windows 11 Pro</p>
+        </div>
+
+        <div class="tech-showcase">
+            <div class="tech-specs glass-card">
+                <div class="tech-specs-header">
+                    <h3>Especificaciones de los 14 Equipos</h3>
+                    <div class="tech-specs-image">
+                        <img src="assets/Ordenador.png" alt="Dell OptiPlex 3060 SFF" />
+                    </div>
+                </div>
+                <div class="specs-grid">
+                    <div class="spec-item">
+                        <div class="spec-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <rect x="4" y="4" width="16" height="16" rx="2" />
+                                <rect x="9" y="9" width="6" height="6" />
+                            </svg>
                         </div>
-                        <div style="display: flex; flex-direction: column; gap: 8px;">
-                            <label for="email" style="font-size: 0.9rem; font-weight: 600;">Correo Electrónico</label>
-                            <input type="email" id="email" name="email" required style="padding: 12px; border-radius: 8px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.5);">
+                        <div class="spec-info">
+                            <span class="spec-label">Modelo</span>
+                            <span class="spec-value">Dell OptiPlex 3060 SFF</span>
                         </div>
                     </div>
-                    
-                    <div style="display: flex; flex-direction: column; gap: 8px;">
-                        <label for="asunto" style="font-size: 0.9rem; font-weight: 600;">Departamento</label>
-                        <select id="asunto" name="asunto" style="padding: 12px; border-radius: 8px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.5);">
-                            <option value="soporte">Soporte Técnico (Redes e Impresión)</option>
-                            <option value="reservas">Reservas de Espacio y Salas</option>
-                            <option value="info">Información General</option>
-                        </select>
+                    <div class="spec-item">
+                        <div class="spec-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <rect x="4" y="4" width="16" height="16" rx="2" />
+                                <rect x="9" y="9" width="6" height="6" />
+                            </svg>
+                        </div>
+                        <div class="spec-info">
+                            <span class="spec-label">Procesador</span>
+                            <span class="spec-value">Intel Core i5-8500T</span>
+                        </div>
                     </div>
-                    
-                    <div style="display: flex; flex-direction: column; gap: 8px;">
-                        <label for="mensaje" style="font-size: 0.9rem; font-weight: 600;">Mensaje / Descripción de Incidencia</label>
-                        <textarea id="mensaje" name="mensaje" rows="4" required style="padding: 12px; border-radius: 8px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.5); resize: vertical;"></textarea>
+                    <div class="spec-item">
+                        <div class="spec-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+                                <line x1="3" y1="6" x2="21" y2="6" />
+                            </svg>
+                        </div>
+                        <div class="spec-info">
+                            <span class="spec-label">Memoria RAM</span>
+                            <span class="spec-value">16 GB DDR4</span>
+                        </div>
                     </div>
-                    
-                    <button type="submit" class="btn btn-primary" style="margin-top: 10px; padding: 14px; font-size: 1rem; cursor: pointer;">
-                        Enviar Ticket de Soporte
-                    </button>
-                </form>
+                    <div class="spec-item">
+                        <div class="spec-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <rect x="2" y="4" width="20" height="16" rx="2" />
+                                <path d="M6 8h.01M10 8h.01" />
+                            </svg>
+                        </div>
+                        <div class="spec-info">
+                            <span class="spec-label">Almacenamiento</span>
+                            <span class="spec-value">SSD NVMe 512 GB</span>
+                        </div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2" />
+                                <line x1="8" y1="21" x2="16" y2="21" />
+                                <line x1="12" y1="17" x2="12" y2="21" />
+                            </svg>
+                        </div>
+                        <div class="spec-info">
+                            <span class="spec-label">Monitor</span>
+                            <span class="spec-value">24" Full HD 1080p</span>
+                        </div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M5 12.55a11 11 0 0 1 14.08 0" />
+                                <path d="M1.42 9a16 16 0 0 1 21.16 0" />
+                                <path d="M8.53 16.11a6 6 0 0 1 6.95 0" />
+                                <circle cx="12" cy="20" r="1" />
+                            </svg>
+                        </div>
+                        <div class="spec-info">
+                            <span class="spec-label">Conectividad</span>
+                            <span class="spec-value">Gigabit + Wi-Fi</span>
+                        </div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <rect x="3" y="11" width="18" height="11" rx="2" />
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                            </svg>
+                        </div>
+                        <div class="spec-info">
+                            <span class="spec-label">Seguridad</span>
+                            <span class="spec-value">TPM 2.0 + Secure Boot</span>
+                        </div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2" />
+                                <path d="M8 21h8M12 17v4" />
+                            </svg>
+                        </div>
+                        <div class="spec-info">
+                            <span class="spec-label">Sistema Operativo</span>
+                            <span class="spec-value">Windows 11 Pro</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Server and Infrastructure specs -->
+                <div style="margin-top: 36px;">
+                    <h4 style="font-size:15px; font-weight:600; color:#a5b4fc; margin-bottom:20px;">Infraestructura de Servidor y Red</h4>
+                    <div class="server-specs-grid">
+                        <div class="server-spec-card glass-card">
+                            <h4>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                                Servidor Central
+                            </h4>
+                            <ul>
+                                <li><span class="spec-key">Modelo</span><span class="spec-val">HP ProLiant MicroServer Gen10+</span></li>
+                                <li><span class="spec-key">CPU</span><span class="spec-val">Intel Xeon E-2224</span></li>
+                                <li><span class="spec-key">RAM</span><span class="spec-val">16 GB DDR4</span></li>
+                                <li><span class="spec-key">Storage</span><span class="spec-val">2× 1TB RAID 1</span></li>
+                                <li><span class="spec-key">SO</span><span class="spec-val">Windows Server 2022</span></li>
+                            </ul>
+                        </div>
+                        <div class="server-spec-card glass-card">
+                            <h4>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                                NAS · Almacenamiento
+                            </h4>
+                            <ul>
+                                <li><span class="spec-key">Modelo</span><span class="spec-val">Synology DS923+</span></li>
+                                <li><span class="spec-key">Función</span><span class="spec-val">Backups automáticos</span></li>
+                                <li><span class="spec-key">Software</span><span class="spec-val">Veeam Backup & Replication</span></li>
+                            </ul>
+                        </div>
+                        <div class="server-spec-card glass-card">
+                            <h4>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1"/></svg>
+                                Red y Firewall
+                            </h4>
+                            <ul>
+                                <li><span class="spec-key">Switch</span><span class="spec-val">TP-Link TL-SG1024DE</span></li>
+                                <li><span class="spec-key">Router/FW</span><span class="spec-val">Ubiquiti UniFi Security Gateway</span></li>
+                                <li><span class="spec-key">SAI</span><span class="spec-val">APC Back-UPS 1500VA</span></li>
+                                <li><span class="spec-key">Rack</span><span class="spec-val">19" 12U con ventilación</span></li>
+                            </ul>
+                        </div>
+                        <div class="server-spec-card glass-card">
+                            <h4>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+                                Software
+                            </h4>
+                            <ul>
+                                <li><span class="spec-key">Ofimática</span><span class="spec-val">Microsoft 365 Business</span></li>
+                                <li><span class="spec-key">Antivirus</span><span class="spec-val">Bitdefender GravityZone</span></li>
+                                <li><span class="spec-key">Acceso remoto</span><span class="spec-val">RDP + RSAT</span></li>
+                                <li><span class="spec-key">Ticketing</span><span class="spec-val">GLPI</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
 
-    </main>
+            <div class="tech-budget glass-card">
+                <h3>Resumen de Inversión</h3>
+                <div class="budget-items">
+                    <div class="budget-item">
+                        <span class="budget-label">14× Dell OptiPlex 3060 SFF</span>
+                        <span class="budget-price">3.500,00 €</span>
+                    </div>
+                    <div class="budget-item">
+                        <span class="budget-label">14× Monitor 24" Full HD</span>
+                        <span class="budget-price">1.190,00 €</span>
+                    </div>
+                    <div class="budget-item">
+                        <span class="budget-label">14× Logitech MX Keys S</span>
+                        <span class="budget-price">1.442,00 €</span>
+                    </div>
+                    <div class="budget-item">
+                        <span class="budget-label">14× Logitech M650 Signature</span>
+                        <span class="budget-price">461,86 €</span>
+                    </div>
+                    <div class="budget-item">
+                        <span class="budget-label">Servidor HP ProLiant MicroServer</span>
+                        <span class="budget-price">900,00 €</span>
+                    </div>
+                    <div class="budget-item">
+                        <span class="budget-label">NAS Synology DS923+</span>
+                        <span class="budget-price">650,00 €</span>
+                    </div>
+                    <div class="budget-item">
+                        <span class="budget-label">Impresora HP LaserJet Pro MFP</span>
+                        <span class="budget-price">250,00 €</span>
+                    </div>
+                    <div class="budget-item">
+                        <span class="budget-label">Rack + Switch + Router/FW + SAI</span>
+                        <span class="budget-price">620,00 €</span>
+                    </div>
+                    <div class="budget-item">
+                        <span class="budget-label">Software (Windows Server, M365, AV...)</span>
+                        <span class="budget-price">3.126,00 €</span>
+                    </div>
+                    <div class="budget-total">
+                        <span>Total Inversión</span>
+                        <span class="total-price">12.139,86 €</span>
+                    </div>
+                </div>
+                <a href="#presupuesto" class="btn btn-primary btn-full" style="margin-top: 24px;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                        <polyline points="14 2 14 8 20 8" />
+                        <line x1="16" y1="13" x2="8" y2="13" />
+                        <line x1="16" y1="17" x2="8" y2="17" />
+                    </svg>
+                    <span>Ver Presupuesto Completo</span>
+                </a>
+                <a href="manual.html" class="btn btn-secondary btn-full" style="margin-top: 12px;">
+                    <span>Ver Manual Técnico</span>
+                </a>
+            </div>
+        </div>
 
-    <footer class="footer" style="border-top: 1px solid var(--glass-border); padding: 60px 0 30px; background: rgba(0,0,0,0.02);">
-        <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 40px;">
+        <!-- Scrum Methodology -->
+        <div class="methodology glass-card">
+            <div class="method-header">
+                <div class="method-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                        <circle cx="9" cy="7" r="4" />
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    </svg>
+                </div>
                 <div>
-                    <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 15px;">CoWorkTech</h4>
-                    <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">
-                        Proyecto Intermodular diseñado para ofrecer soluciones de conectividad, escalabilidad y seguridad informática de alto nivel.
+                    <h3>Metodología Scrum</h3>
+                    <p>Desarrollo ágil en 7 sprints · 10 nov 2025 – 26 may 2026</p>
+                </div>
+            </div>
+            <div class="sprint-timeline">
+                <div class="sprint-item">
+                    <div class="sprint-marker active">1</div>
+                    <div class="sprint-content">
+                        <h4>Sprint 1 · 10 nov – 30 nov</h4>
+                        <p>Diagnóstico inicial, auditoría de red, definición del backlog y reparto de roles</p>
+                    </div>
+                </div>
+                <div class="sprint-item">
+                    <div class="sprint-marker">2</div>
+                    <div class="sprint-content">
+                        <h4>Sprint 2 · 1 dic – 21 dic</h4>
+                        <p>Mejora de red e infraestructura, configuración de sistemas críticos e instalación inicial</p>
+                    </div>
+                </div>
+                <div class="sprint-item">
+                    <div class="sprint-marker">3</div>
+                    <div class="sprint-content">
+                        <h4>Sprint 3 · 22 dic – 12 ene</h4>
+                        <p>Ajustes finales de red, redacción de manuales técnicos y revisión de seguridad</p>
+                    </div>
+                </div>
+                <div class="sprint-item">
+                    <div class="sprint-marker">4</div>
+                    <div class="sprint-content">
+                        <h4>Sprint 4 · 13 ene – 9 feb</h4>
+                        <p>Pruebas de conectividad en Packet Tracer: DHCP, enrutamiento y DNS</p>
+                    </div>
+                </div>
+                <div class="sprint-item">
+                    <div class="sprint-marker">5</div>
+                    <div class="sprint-content">
+                        <h4>Sprint 5 · 10 feb – 9 mar</h4>
+                        <p>Troubleshooting, ajustes LAN/servidor y despliegue de políticas de seguridad</p>
+                    </div>
+                </div>
+                <div class="sprint-item">
+                    <div class="sprint-marker">6</div>
+                    <div class="sprint-content">
+                        <h4>Sprint 6 · 10 mar – 13 abr</h4>
+                        <p>Manual técnico, protocolos de mantenimiento y generación de anexos técnicos</p>
+                    </div>
+                </div>
+                <div class="sprint-item">
+                    <div class="sprint-marker">7</div>
+                    <div class="sprint-content">
+                        <h4>Sprint 7 · 14 abr – 26 may</h4>
+                        <p>Sprint Review, corrección final y preparación de la defensa oral del proyecto</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section id="seguridad" class="technology" style="padding-top: 0;">
+        <div class="section-header">
+            <span class="section-tag">Seguridad</span>
+            <h2 class="section-title">Propuesta de <span class="gradient-text">Seguridad</span></h2>
+            <p class="section-subtitle">Medidas integrales para proteger la red, los sistemas y los datos del coworking</p>
+        </div>
+        <div class="security-grid">
+            <div class="security-card glass-card">
+                <h3>
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="1.5"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1"/></svg>
+                    Seguridad en la Red
+                </h3>
+                <ul>
+                    <li><span class="sec-icon">🛡️</span> Router/Firewall Ubiquiti UniFi para filtrar y controlar el tráfico de red</li>
+                    <li><span class="sec-icon">🔀</span> Switch gestionable TP-Link para segmentar y controlar el tráfico entre dispositivos</li>
+                    <li><span class="sec-icon">🔒</span> Wi-Fi segura con cifrado WPA3</li>
+                    <li><span class="sec-icon">👤</span> Control de accesos mediante usuarios autorizados</li>
+                    <li><span class="sec-icon">🔄</span> Actualización periódica del firmware de los dispositivos de red</li>
+                </ul>
+            </div>
+            <div class="security-card glass-card">
+                <h3>
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    Seguridad en los Sistemas
+                </h3>
+                <ul>
+                    <li><span class="sec-icon">🦠</span> Bitdefender GravityZone (antivirus empresarial en todos los equipos)</li>
+                    <li><span class="sec-icon">🏢</span> Active Directory (AD DS) para gestión centralizada de usuarios y GPOs</li>
+                    <li><span class="sec-icon">🚫</span> Eliminación de servicios innecesarios para reducir vulnerabilidades</li>
+                    <li><span class="sec-icon">💾</span> Copias de seguridad automáticas con Veeam Backup & Replication en NAS</li>
+                    <li><span class="sec-icon">🔁</span> Actualización constante del SO y software instalado</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Phases -->
+    <section id="fases" class="phases">
+        <div class="section-header">
+            <span class="section-tag">Proyecto</span>
+            <h2 class="section-title">Fases del <span class="gradient-text">desarrollo</span></h2>
+        </div>
+
+        <div class="phases-container">
+            <div class="phase-card glass-card">
+                <div class="phase-number">01</div>
+                <h3>Planificación y Análisis</h3>
+                <p>Análisis de la empresa Atticco como referencia. Definición de servicios, plano del espacio, roles del equipo y metodología Scrum.</p>
+                <div class="phase-status completed">
+                    <span class="status-dot"></span>
+                    Completado
+                </div>
+            </div>
+            <div class="phase-card glass-card">
+                <div class="phase-number">02</div>
+                <h3>Diseño Técnico</h3>
+                <p>Diseño de red LAN (192.168.1.0/24) en topología estrella, selección de hardware Dell/HP, software Windows 11 Pro y presupuesto completo de 12.139,86 €.</p>
+                <div class="phase-status completed">
+                    <span class="status-dot"></span>
+                    Completado
+                </div>
+            </div>
+            <div class="phase-card glass-card">
+                <div class="phase-number">03</div>
+                <h3>Simulación y Pruebas</h3>
+                <p>Configuración y simulación de la red en Cisco Packet Tracer. Pruebas de ping, DHCP, conectividad entre PCs, servidor, NAS e impresora. Registro de incidencias con GLPI.</p>
+                <div class="phase-status completed">
+                    <span class="status-dot"></span>
+                    Completado
+                </div>
+            </div>
+            <div class="phase-card glass-card">
+                <div class="phase-number">04</div>
+                <h3>Presentación Final</h3>
+                <p>Presentación final y defensa oral del proyecto con toda la documentación técnica consolidada. Sprint Review y retrospectiva del equipo.</p>
+                <div class="phase-status in-progress">
+                    <span class="status-dot"></span>
+                    En progreso
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Red de la Empresa Section -->
+    <section id="red" class="network-section">
+        <div class="section-header">
+            <span class="section-tag">Infraestructura</span>
+            <h2 class="section-title">Red de la <span class="gradient-text">Empresa</span></h2>
+            <p class="section-subtitle">Topología en estrella extendida diseñada en Cisco Packet Tracer · Segmento 192.168.1.0/24</p>
+        </div>
+
+        <div class="network-diagram glass-card">
+            <div class="network-image">
+                <img src="assets/PacketTracer.png" alt="Diagrama de red Cisco Packet Tracer" />
+            </div>
+            <div class="network-info">
+                <div class="network-detail">
+                    <span class="detail-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2" />
+                            <path d="M8 21h8M12 17v4" />
+                        </svg>
+                    </span>
+                    <span class="detail-text">14 PCs · IPs 192.168.1.100 – 192.168.1.114 (DHCP)</span>
+                </div>
+                <div class="network-detail">
+                    <span class="detail-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="4" y="4" width="16" height="16" rx="2" />
+                            <path d="M9 9h.01M15 9h.01M9 15h.01M15 15h.01" />
+                        </svg>
+                    </span>
+                    <span class="detail-text">Switch Cisco 2960 · IP admin 192.168.1.2</span>
+                </div>
+                <div class="network-detail">
+                    <span class="detail-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M5 12.55a11 11 0 0 1 14.08 0" />
+                            <path d="M1.42 9a16 16 0 0 1 21.16 0" />
+                            <path d="M8.53 16.11a6 6 0 0 1 6.95 0" />
+                            <circle cx="12" cy="20" r="1" />
+                        </svg>
+                    </span>
+                    <span class="detail-text">Router Cisco 2911 · Gateway 192.168.1.1 + DHCP</span>
+                </div>
+                <div class="network-detail">
+                    <span class="detail-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                        </svg>
+                    </span>
+                    <span class="detail-text">Servidor · IP estática 192.168.1.10 · Almacenamiento y AD</span>
+                </div>
+                <div class="network-detail">
+                    <span class="detail-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polyline points="6 9 6 2 18 2 18 9"/>
+                            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+                            <rect x="6" y="14" width="12" height="8"/>
+                        </svg>
+                    </span>
+                    <span class="detail-text">Impresora HP LaserJet · IP estática 192.168.1.30</span>
+                </div>
+                <div class="network-detail">
+                    <span class="detail-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="4" width="20" height="16" rx="2"/>
+                            <path d="M6 8h.01M10 8h.01"/>
+                        </svg>
+                    </span>
+                    <span class="detail-text">NAS Synology · IP estática 192.168.1.20 · Backups</span>
+                </div>
+                <div class="network-detail">
+                    <span class="detail-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M5 12.55a11 11 0 0 1 14.08 0"/>
+                            <circle cx="12" cy="20" r="1"/>
+                        </svg>
+                    </span>
+                    <span class="detail-text">Laptops móviles · IPs 192.168.1.150 – 192.168.1.151</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Network specs summary -->
+        <div class="network-specs" style="max-width:1100px; margin: 32px auto 0; padding: 0 24px;">
+            <div class="net-spec-card">
+                <div class="net-spec-label">Segmento</div>
+                <div class="net-spec-value">192.168.1.0 /24</div>
+            </div>
+            <div class="net-spec-card">
+                <div class="net-spec-label">Topología</div>
+                <div class="net-spec-value">Estrella extendida</div>
+            </div>
+            <div class="net-spec-card">
+                <div class="net-spec-label">Gateway</div>
+                <div class="net-spec-value">192.168.1.1</div>
+            </div>
+            <div class="net-spec-card">
+                <div class="net-spec-label">Hosts máx.</div>
+                <div class="net-spec-value">254 dispositivos</div>
+            </div>
+            <div class="net-spec-card">
+                <div class="net-spec-label">Protocolo IP</div>
+                <div class="net-spec-value">IPv4 + DHCP</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Budget Section -->
+    <section id="presupuesto" class="budget-section">
+        <div class="section-header">
+            <span class="section-tag">Presupuesto</span>
+            <h2 class="section-title">Inversión <span class="gradient-text">completa</span></h2>
+            <p class="section-subtitle">Desglose detallado de todos los componentes del proyecto</p>
+        </div>
+        <div class="budget-container">
+            <div class="budget-wrapper glass-card">
+                <table class="budget-full-table">
+                    <thead>
+                        <tr>
+                            <th>Artículo</th>
+                            <th>Modelo / Especificación</th>
+                            <th>Uds.</th>
+                            <th>Coste unit.</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Equipos de sobremesa</td><td>Dell OptiPlex 3060 SFF</td><td>14</td><td>250,00 €</td><td>3.500,00 €</td></tr>
+                        <tr><td>Monitores</td><td>24" Full HD</td><td>14</td><td>85,00 €</td><td>1.190,00 €</td></tr>
+                        <tr><td>Teclados</td><td>Logitech MX Keys S</td><td>14</td><td>103,00 €</td><td>1.442,00 €</td></tr>
+                        <tr><td>Ratones</td><td>Logitech M650 Signature</td><td>14</td><td>32,99 €</td><td>461,86 €</td></tr>
+                        <tr><td>Servidor</td><td>HP ProLiant MicroServer Gen10+</td><td>1</td><td>900,00 €</td><td>900,00 €</td></tr>
+                        <tr><td>NAS</td><td>Synology DS923+</td><td>1</td><td>650,00 €</td><td>650,00 €</td></tr>
+                        <tr><td>Impresora multifunción</td><td>HP LaserJet Pro MFP</td><td>1</td><td>250,00 €</td><td>250,00 €</td></tr>
+                        <tr><td>Armario rack</td><td>19" 12U con ventilación</td><td>1</td><td>180,00 €</td><td>180,00 €</td></tr>
+                        <tr><td>Switch gestionable</td><td>TP-Link TL-SG1024DE</td><td>1</td><td>120,00 €</td><td>120,00 €</td></tr>
+                        <tr><td>Router / Firewall</td><td>Ubiquiti UniFi Security Gateway</td><td>1</td><td>140,00 €</td><td>140,00 €</td></tr>
+                        <tr><td>SAI (UPS)</td><td>APC Back-UPS 1500VA</td><td>1</td><td>180,00 €</td><td>180,00 €</td></tr>
+                        <tr><td>SO Servidor</td><td>Windows Server 2022 Standard</td><td>1</td><td>600,00 €</td><td>600,00 €</td></tr>
+                        <tr><td>Suite ofimática</td><td>Microsoft 365 Business Standard</td><td>14</td><td>144,00 €</td><td>2.016,00 €</td></tr>
+                        <tr><td>Antivirus empresarial</td><td>Bitdefender GravityZone</td><td>14</td><td>15,00 €</td><td>210,00 €</td></tr>
+                        <tr><td>Software copias de seguridad</td><td>Veeam Backup & Replication</td><td>1</td><td>300,00 €</td><td>300,00 €</td></tr>
+                        <tr class="total-row"><td colspan="4"><strong>TOTAL INVERSIÓN</strong></td><td><strong>12.139,86 €</strong></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Incidents Section -->
+    <section id="incidencias" class="incidents-section">
+        <div class="section-header">
+            <span class="section-tag">Gestión</span>
+            <h2 class="section-title">Registro de <span class="gradient-text">Incidencias</span></h2>
+            <p class="section-subtitle">Sistema de ticketing para el control y resolución de problemas técnicos</p>
+        </div>
+        <div class="incidents-container">
+            <div class="incidents-grid">
+                <div class="incident-info-card glass-card">
+                    <h3 style="font-size:17px; font-weight:600; color:#e2e8f0; margin-bottom:20px;">Estructura del registro</h3>
+                    <div class="incident-field"><div class="incident-dot"></div><div class="incident-text"><strong>Fecha y hora</strong> de la incidencia detectada</div></div>
+                    <div class="incident-field"><div class="incident-dot"></div><div class="incident-text"><strong>Equipo o dispositivo</strong> afectado</div></div>
+                    <div class="incident-field"><div class="incident-dot"></div><div class="incident-text"><strong>Descripción</strong> del problema detectado</div></div>
+                    <div class="incident-field"><div class="incident-dot"></div><div class="incident-text"><strong>Usuario</strong> que reporta la incidencia</div></div>
+                    <div class="incident-field"><div class="incident-dot"></div><div class="incident-text"><strong>Prioridad</strong> o nivel de gravedad</div></div>
+                    <div class="incident-field"><div class="incident-dot"></div><div class="incident-text"><strong>Solución aplicada</strong> documentada paso a paso</div></div>
+                    <div class="incident-field"><div class="incident-dot"></div><div class="incident-text"><strong>Estado:</strong> Pendiente → En proceso → Resuelta</div></div>
+                    <div class="incident-field"><div class="incident-dot"></div><div class="incident-text"><strong>Técnico responsable</strong> de la intervención</div></div>
+                </div>
+                <div class="incident-info-card glass-card">
+                    <h3 style="font-size:17px; font-weight:600; color:#e2e8f0; margin-bottom:20px;">Herramienta y proceso</h3>
+                    <p style="font-size:14px; color:#94a3b8; line-height:1.8; margin-bottom:20px;">
+                        El sistema se gestiona mediante <strong style="color:#a5b4fc;">GLPI</strong> instalado en el servidor central, o en su defecto, un documento compartido en el NAS Synology.
                     </p>
+                    <p style="font-size:14px; color:#94a3b8; line-height:1.8; margin-bottom:20px;">
+                        Cuando un coworker detecta un fallo (conectividad, error de impresión, etc.), genera un ticket con su prioridad. El técnico actualiza el estado a "En proceso" y documenta los pasos técnicos al cerrar el ticket.
+                    </p>
+                    <p style="font-size:14px; color:#94a3b8; line-height:1.8;">
+                        Este sistema crea una <strong style="color:#a5b4fc;">base de conocimientos</strong> que permite resolver problemas similares mucho más rápido en el futuro.
+                    </p>
+                    <div style="margin-top:24px; display:flex; gap:12px; flex-wrap:wrap;">
+                        <span style="background:rgba(34,197,94,0.12); color:#4ade80; border:1px solid rgba(34,197,94,0.2); padding:6px 14px; border-radius:20px; font-size:12px; font-weight:600;">● Resuelta</span>
+                        <span style="background:rgba(234,179,8,0.12); color:#facc15; border:1px solid rgba(234,179,8,0.2); padding:6px 14px; border-radius:20px; font-size:12px; font-weight:600;">● En proceso</span>
+                        <span style="background:rgba(239,68,68,0.12); color:#f87171; border:1px solid rgba(239,68,68,0.2); padding:6px 14px; border-radius:20px; font-size:12px; font-weight:600;">● Pendiente</span>
+                    </div>
                 </div>
-                <div>
-                    <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 15px;">Enlaces Rápidos</h4>
-                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px;">
-                        <li><a href="#inicio" style="color: var(--text-secondary); text-decoration: none; font-size: 0.9rem;">Inicio</a></li>
-                        <li><a href="#tecnologia" style="color: var(--text-secondary); text-decoration: none; font-size: 0.9rem;">Tecnología</a></li>
-                        <li><a href="#sprints" style="color: var(--text-secondary); text-decoration: none; font-size: 0.9rem;">Plan de Trabajo</a></li>
-                        <li><a href="manual.html" style="color: var(--primary); text-decoration: none; font-size: 0.9rem; font-weight: 500;">Manual Técnico Oficial</a></li>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="contact-container">
+            <div class="contact-info glass-card">
+                <h2>¿Listo para impulsar tu proyecto?</h2>
+                <p>Únete a nuestra comunidad de profesionales y disfruta de un espacio diseñado para el éxito. Basado en el modelo Atticco.</p>
+
+                <div class="contact-features">
+                    <div class="contact-feature">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="feature-label">Ubicación</span>
+                            <span class="feature-value">Barcelona, Madrid, Valencia</span>
+                        </div>
+                    </div>
+                    <div class="contact-feature">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10" />
+                                <polyline points="12 6 12 12 16 14" />
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="feature-label">Horario</span>
+                            <span class="feature-value">Acceso 24/7 · Apagado 20:00h</span>
+                        </div>
+                    </div>
+                    <div class="contact-feature">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="feature-label">Email</span>
+                            <span class="feature-value">info@coworktech.es</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form glass-card">
+                <h3>Solicita información</h3>
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Tu email" required>
+                </div>
+                <div class="form-group">
+                    <select id="interest">
+                        <option value="">¿Qué te interesa?</option>
+                        <option value="puesto-flexible">Puesto flexible</option>
+                        <option value="puesto-fijo">Puesto fijo</option>
+                        <option value="oficina-privada">Oficina privada</option>
+                        <option value="sala-reuniones">Sala de reuniones</option>
+                        <option value="networking">Eventos de networking</option>
+                        <option value="mentoring">Mentoring y asesoría</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" rows="4" placeholder="Tu mensaje"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">
+                    Enviar mensaje
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span class="logo-icon">◈</span>
+                    <span class="logo-text">CoWork<span class="accent">Tech</span></span>
+                </div>
+                <p>Proyecto Intermodular · Espacio de Coworking Tecnológico.<br>Basado en el modelo Atticco · LEED Platinum · Papel Cero.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#espacios">Espacios</a></li>
+                        <li><a href="#equipo">Equipo</a></li>
+                        <li><a href="#seguridad">Seguridad</a></li>
+                        <li><a href="#red">Red LAN</a></li>
+                        <li><a href="#presupuesto">Presupuesto</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 15px;">Legal</h4>
-                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px;">
-                        <li><span style="color: var(--text-secondary); font-size: 0.9rem;">Política de Privacidad</span></li>
-                        <li><span style="color: var(--text-secondary); font-size: 0.9rem;">Aviso Legal</span></li>
-                        <li><span style="color: var(--text-secondary); font-size: 0.9rem;">Términos de Uso</span></li>
+                <div class="footer-column">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#">Puestos Flexibles</a></li>
+                        <li><a href="#">Oficinas Privadas</a></li>
+                        <li><a href="#">Salas de Reuniones</a></li>
+                        <li><a href="#">Networking</a></li>
+                        <li><a href="#">Mentoring</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Proyecto</h4>
+                    <ul>
+                        <li><a href="manual.html">Manual Técnico</a></li>
+                        <li><a href="#fases">Fases</a></li>
+                        <li><a href="#ods">ODS</a></li>
+                        <li><a href="#incidencias">Incidencias</a></li>
                     </ul>
                 </div>
             </div>
-            
-            <div style="border-top: 1px solid rgba(0,0,0,0.05); padding-top: 25px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px; align-items: center;">
-                <p style="margin: 0; color: var(--text-secondary); font-size: 0.9rem;">
-                    &copy; 2026 CoWorkTech. Todos los derechos reservados.
-                </p>
-                <p style="margin: 0; color: var(--text-secondary); font-size: 0.85rem;">
-                    Equipo: Juan Diego Casado | José Sebastián F. | Nicolás Hidalgo | Gerardo Aranda
-                </p>
-            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 CoWorkTech · Proyecto Intermodular de Coworking Tecnológico.</p>
+            <p class="project-credit">Juan Diego Casado · José Sebastián Fernández · Nicolás Hidalgo · Gerardo Aranda</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
