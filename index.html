@@ -81,14 +81,17 @@
         .sprint-table tr:hover td { background: rgba(99,102,241,0.05); }
         .sprint-num { display: inline-block; background: linear-gradient(135deg,#6366f1,#a78bfa); color: #fff; font-weight: 700; font-size: 12px; padding: 3px 10px; border-radius: 20px; }
 
-        .server-specs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 28px; }
-        .server-spec-card { padding: 28px; border-radius: 16px; border: 1px solid rgba(99,102,241,0.12); }
-        .server-spec-card h4 { font-size: 15px; font-weight: 600; color: #a5b4fc; margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+        .server-specs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-top: 28px; }
+        .server-spec-card { padding: 24px 28px; border-radius: 16px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.09); border-left: 3px solid #6366f1; }
+        .server-spec-card:nth-child(2) { border-left-color: #10b981; }
+        .server-spec-card:nth-child(3) { border-left-color: #06b6d4; }
+        .server-spec-card:nth-child(4) { border-left-color: #f59e0b; }
+        .server-spec-card h4 { font-size: 13px; font-weight: 700; color: #c7d2fe; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; text-transform: uppercase; letter-spacing: 0.8px; }
         .server-spec-card ul { list-style: none; padding: 0; }
-        .server-spec-card ul li { font-size: 13px; color: #94a3b8; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.04); display: flex; justify-content: space-between; gap: 12px; }
+        .server-spec-card ul li { font-size: 13px; color: #94a3b8; padding: 7px 0; border-bottom: 1px solid rgba(255,255,255,0.05); display: flex; justify-content: space-between; align-items: center; gap: 12px; }
         .server-spec-card ul li:last-child { border-bottom: none; }
-        .spec-key { color: #64748b; }
-        .spec-val { color: #cbd5e1; font-weight: 500; text-align: right; }
+        .spec-key { color: #94a3b8; font-size: 12px; flex-shrink: 0; }
+        .spec-val { color: #f1f5f9; font-weight: 600; text-align: right; font-size: 13px; }
     </style>
 </head>
 
@@ -235,13 +238,12 @@
             <p class="section-subtitle">Suite completa de servicios para autónomos, startups y empresas</p>
         </div>
 
-        <div class="services-grid">
+        <div class="services-grid" style="max-width:1200px; grid-template-columns: repeat(auto-fit, minmax(340px,1fr));">
             <!-- Servicios Básicos -->
             <div class="service-category glass-card">
                 <div class="category-header">
                     <div class="category-icon basic">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                             <rect x="2" y="3" width="20" height="14" rx="2" />
                             <path d="M8 21h8M12 17v4" />
                         </svg>
@@ -249,13 +251,13 @@
                     <h3>Servicios Básicos</h3>
                 </div>
                 <ul class="service-list">
-                    <li><span class="check-icon">✓</span> Puestos de trabajo flexibles y fijos con mobiliario ergonómico</li>
-                    <li><span class="check-icon">✓</span> Oficinas privadas exclusivas para equipos corporativos</li>
-                    <li><span class="check-icon">✓</span> Salas de reuniones y <em>Phone Booths</em> insonorizadas para llamadas privadas</li>
-                    <li><span class="check-icon">✓</span> Conectividad de banda ancha simétrica + zona de reprografía</li>
-                    <li><span class="check-icon">✓</span> Limpieza diaria, mantenimiento preventivo y climatización inteligente</li>
-                    <li><span class="check-icon">✓</span> Seguridad y acceso controlado 24/7 mediante credenciales</li>
-                    <li><span class="check-icon">✓</span> Recepción en horario comercial, mensajería y <strong>domiciliación fiscal</strong> de empresas</li>
+                    <li><span class="check-icon">✓</span> Puestos flexibles y fijos con mobiliario ergonómico</li>
+                    <li><span class="check-icon">✓</span> Oficinas privadas para equipos corporativos</li>
+                    <li><span class="check-icon">✓</span> Salas de reuniones y <em>Phone Booths</em> insonorizadas</li>
+                    <li><span class="check-icon">✓</span> Internet de banda ancha simétrica + reprografía</li>
+                    <li><span class="check-icon">✓</span> Limpieza diaria y climatización inteligente</li>
+                    <li><span class="check-icon">✓</span> Acceso controlado 24/7 mediante credenciales</li>
+                    <li><span class="check-icon">✓</span> Recepción, mensajería y <strong>domiciliación fiscal</strong></li>
                 </ul>
             </div>
 
@@ -264,22 +266,20 @@
                 <div class="featured-badge">Popular</div>
                 <div class="category-header">
                     <div class="category-icon premium">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5">
-                            <polygon
-                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
                         </svg>
                     </div>
                     <h3>Valor Añadido</h3>
                 </div>
                 <ul class="service-list">
-                    <li><span class="check-icon">✓</span> Zonas comunes: cocina equipada, cafetería comunitaria, lounge y terraza exterior</li>
-                    <li><span class="check-icon">✓</span> Talleres técnicos, eventos de integración sectorial y networking</li>
-                    <li><span class="check-icon">✓</span> Bienestar corporativo: yoga, mindfulness y convenios con gimnasios</li>
-                    <li><span class="check-icon">✓</span> Asesoramiento legal, gestión contable y mentoring para startups</li>
-                    <li><span class="check-icon">✓</span> Planes flexibles: por hora, día o mes</li>
-                    <li><span class="check-icon">✓</span> <strong>Plataforma digital propia</strong>: reservas de salas, pagos y comunicación interna</li>
-                    <li><span class="check-icon">✓</span> RJ45 dedicado por puesto conectado a switch gestionable Gigabit</li>
+                    <li><span class="check-icon">✓</span> Cocina, café, lounge y terraza exterior</li>
+                    <li><span class="check-icon">✓</span> Talleres, networking y actividades de comunidad</li>
+                    <li><span class="check-icon">✓</span> Yoga, mindfulness y convenios con gimnasios</li>
+                    <li><span class="check-icon">✓</span> Asesoría legal, contable y mentoring</li>
+                    <li><span class="check-icon">✓</span> Planes por hora, día o mes</li>
+                    <li><span class="check-icon">✓</span> <strong>App propia</strong>: reservas, pagos y comunicación</li>
+                    <li><span class="check-icon">✓</span> RJ45 Gigabit dedicado por puesto</li>
                 </ul>
             </div>
 
@@ -287,8 +287,7 @@
             <div class="service-category glass-card">
                 <div class="category-header">
                     <div class="category-icon complement">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                             <path d="M12 2L2 7l10 5 10-5-10-5z" />
                             <path d="M2 17l10 5 10-5" />
                             <path d="M2 12l10 5 10-5" />
@@ -297,12 +296,12 @@
                     <h3>Complementarios</h3>
                 </div>
                 <ul class="service-list">
-                    <li><span class="check-icon">✓</span> Catering y café de especialidad para eventos internos y reuniones corporativas</li>
-                    <li><span class="check-icon">✓</span> <strong>Taquillas individuales con cerradura electrónica</strong> para equipos de valor</li>
-                    <li><span class="check-icon">✓</span> Cesión de salas y terrazas para conferencias y formaciones externas</li>
-                    <li><span class="check-icon">✓</span> <strong>Alianzas estratégicas</strong> con restaurantes, tiendas y parkings del barrio</li>
-                    <li><span class="check-icon">✓</span> Mobiliario fabricado con materiales reciclados y climatización eficiente</li>
-                    <li><span class="check-icon">✓</span> Apagado automático a las 20:00h · LED con sensores · Punto de reciclaje electrónico</li>
+                    <li><span class="check-icon">✓</span> Catering y café premium para eventos</li>
+                    <li><span class="check-icon">✓</span> <strong>Taquillas electrónicas</strong> para equipos de valor</li>
+                    <li><span class="check-icon">✓</span> Alquiler de espacios para eventos externos</li>
+                    <li><span class="check-icon">✓</span> <strong>Alianzas</strong> con restaurantes, tiendas y parkings</li>
+                    <li><span class="check-icon">✓</span> Mobiliario reciclado y climatización eficiente</li>
+                    <li><span class="check-icon">✓</span> Apagado 20:00h · LED con sensores · Reciclaje electrónico</li>
                 </ul>
             </div>
         </div>
