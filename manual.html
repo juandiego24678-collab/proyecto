@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Manual Técnico de Configuración de Equipos y Servicios - Coworking Tech Space">
+    <title>Manual Técnico | CoWorkTech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="manual.css">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="blob blob-4"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">◈</span>
+                <span class="logo-text">CoWork<span class="accent">Tech</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">← Volver al Inicio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Manual Content -->
+    <main class="manual-container">
+        <header class="manual-header">
+            <span class="section-tag">Documentación Técnica</span>
+            <h1 class="manual-title">Manual Técnico de <span class="gradient-text">Configuración</span></h1>
+            <p class="manual-subtitle">Configuración técnica de los equipos informáticos y servicios del espacio de
+                coworking</p>
+        </header>
+
+        <!-- Table of Contents -->
+        <nav class="toc glass-card">
+            <h2>📋 Índice</h2>
+            <ol class="toc-list">
+                <li><a href="#equipos">Equipos Informáticos Instalados</a></li>
+                <li><a href="#sistema">Configuración del Sistema Operativo</a></li>
+                <li><a href="#red">Configuración de Servicios de Red</a></li>
+                <li><a href="#servicios">Servicios Implementados</a></li>
+                <li><a href="#pruebas">Pruebas Técnicas Realizadas</a></li>
+                <li><a href="#checklist">Checklist de Configuración</a></li>
+            </ol>
+        </nav>
+
+        <!-- Section 1: Equipos -->
+        <section id="equipos" class="manual-section glass-card">
+            <div class="section-number">01</div>
+            <h2>Equipos Informáticos Instalados</h2>
+            <p class="section-intro">Se han instalado <strong>14 equipos</strong> con Windows 11 Pro, diseñados para
+                ofrecer un entorno de trabajo eficiente y estable.</p>
+
+            <div class="subsection">
+                <h3>1.1 Especificaciones Técnicas</h3>
+                <div class="specs-table">
+                    <div class="spec-row">
+                        <span class="spec-name">🖥️ Procesador</span>
+                        <span class="spec-value">Intel Core i5 (8ª generación o superior) o AMD Ryzen 5
+                            equivalente</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-name">💾 Memoria RAM</span>
+                        <span class="spec-value">8 GB (recomendado 16 GB para multitarea o software avanzado)</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-name">💿 Disco</span>
+                        <span class="spec-value">SSD 512 GB para alto rendimiento</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-name">🌐 Conectividad</span>
+                        <span class="spec-value">
+                            <ul>
+                                <li>Tarjeta de red Gigabit 10/100/1000 Mbps</li>
+                                <li>Wi-Fi 6 (802.11ax)</li>
+                            </ul>
+                        </span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-name">🔒 Seguridad</span>
+                        <span class="spec-value">
+                            <ul>
+                                <li>TPM 2.0</li>
+                                <li>Arranque seguro (UEFI Secure Boot)</li>
+                            </ul>
+                        </span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-name">🔌 Puertos</span>
+                        <span class="spec-value">USB 3.0, HDMI o DisplayPort, RJ45</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-name">🖥️ Pantalla</span>
+                        <span class="spec-value">24" Full HD</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-name">🔗 Acceso remoto</span>
+                        <span class="spec-value">Compatible con Remote Desktop Protocol (RDP)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>1.2 Periféricos incluidos</h3>
+                <ul class="feature-list">
+                    <li>Teclado y ratón inalámbricos</li>
+                    <li>Monitor externo adicional de 24" opcional</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section 2: Sistema Operativo -->
+        <section id="sistema" class="manual-section glass-card">
+            <div class="section-number">02</div>
+            <h2>Configuración del Sistema Operativo</h2>
+
+            <div class="subsection">
+                <h3>2.1 Parámetros iniciales</h3>
+                <ul class="feature-list">
+                    <li>Instalación limpia de Windows 11 Pro</li>
+                    <li>Habilitación de Secure Boot</li>
+                    <li>Activación automática de Windows</li>
+                    <li>Configuración de usuario estándar + usuario administrador</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>2.2 Política de seguridad</h3>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <span class="info-icon">🔑</span>
+                        <div>
+                            <strong>Contraseña</strong>
+                            <p>Mínimo 8 caracteres</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-icon">⏱️</span>
+                        <div>
+                            <strong>Expiración</strong>
+                            <p>Cada 180 días</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-icon">🔄</span>
+                        <div>
+                            <strong>Windows Update</strong>
+                            <p>Modo automático</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-icon">🛡️</span>
+                        <div>
+                            <strong>Antivirus</strong>
+                            <p>Corporativo activo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>2.3 Software instalado</h3>
+                <ul class="feature-list">
+                    <li>Suite ofimática (Microsoft Office o LibreOffice)</li>
+                    <li>Navegadores actualizados (Edge / Chrome / Firefox)</li>
+                    <li>Aplicación interna de gestión de reservas</li>
+                    <li>Herramientas de soporte remoto</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section 3: Servicios de Red -->
+        <section id="red" class="manual-section glass-card">
+            <div class="section-number">03</div>
+            <h2>Configuración de Servicios de Red</h2>
+            <p class="section-intro">La red del coworking se ha diseñado para ser estable, segura y de fácil
+                administración.</p>
+
+            <div class="subsection">
+                <h3>3.1 Dirección IP</h3>
+                <div class="code-block">
+                    <div class="code-line"><span class="code-key">Modo:</span> DHCP automático para usuarios</div>
+                    <div class="code-line"><span class="code-key">Rango general:</span> 192.168.1.0/24</div>
+                    <div class="code-line"><span class="code-key">Gateway:</span> 192.168.1.1</div>
+                    <div class="code-line"><span class="code-key">DNS Primario:</span> 192.168.1.10 (servidor interno)
+                    </div>
+                    <div class="code-line"><span class="code-key">DNS Secundario:</span> 8.8.8.8</div>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>3.2 DHCP</h3>
+                <div class="code-block">
+                    <div class="code-line"><span class="code-key">Ámbito activo:</span> 192.168.1.20 – 192.168.1.200
+                    </div>
+                    <div class="code-line"><span class="code-key">Tiempo de concesión:</span> 8 días</div>
+                    <div class="code-line"><span class="code-key">Reservas:</span> Opcionales para impresoras y
+                        dispositivos críticos</div>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>3.3 DNS</h3>
+                <div class="code-block">
+                    <div class="code-line"><span class="code-key">Zona principal:</span> coworking.local</div>
+                    <div class="code-line code-comment">// Registros configurados</div>
+                    <div class="code-line"><span class="code-host">server.coworking.local</span> → 192.168.1.10</div>
+                    <div class="code-line"><span class="code-host">printer01.coworking.local</span> → 192.168.1.50</div>
+                    <div class="code-line code-comment">// Alias (CNAME)</div>
+                    <div class="code-line"><span class="code-host">www</span> → server</div>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>3.4 Tabla de Direcciones IP</h3>
+                <p class="table-intro">Asignación completa de direcciones IP de todos los dispositivos de la red.</p>
+                <div class="ip-table-wrapper">
+                    <table class="ip-table">
+                        <thead>
+                            <tr>
+                                <th>Dispositivo</th>
+                                <th>Interfaz</th>
+                                <th>Dirección IP</th>
+                                <th>Máscara</th>
+                                <th>Gateway</th>
+                                <th>Tipo</th>
+                                <th>Notas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- INFRAESTRUCTURA -->
+                            <tr class="category-row">
+                                <td colspan="7">🏗️ Infraestructura</td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">Router0</span></td>
+                                <td>G0/0</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td>/24</td>
+                                <td>N/A</td>
+                                <td><span class="badge badge-static">Estática</span></td>
+                                <td>Gateway / DHCP / DNS</td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">Switch0</span></td>
+                                <td>VLAN 1</td>
+                                <td><code>192.168.1.2</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-static">Estática</span></td>
+                                <td>Gestión (SVI)</td>
+                            </tr>
+
+                            <!-- SERVICIOS -->
+                            <tr class="category-row">
+                                <td colspan="7">🖥️ Servicios</td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">Server0</span></td>
+                                <td>FastEth0</td>
+                                <td><code>192.168.1.10</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-static">Estática</span></td>
+                                <td>Servidor de archivos</td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">Printer0</span></td>
+                                <td>FastEth0</td>
+                                <td><code>192.168.1.20</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-static">Estática</span></td>
+                                <td>Impresora de red</td>
+                            </tr>
+
+                            <!-- EQUIPOS MÓVILES -->
+                            <tr class="category-row">
+                                <td colspan="7">💻 Equipos Móviles <span class="range-tag">(Rango DHCP)</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">Laptop0</span></td>
+                                <td>Wireless</td>
+                                <td><code>192.168.1.50</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-dynamic">Dinámica</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">Laptop1</span></td>
+                                <td>Wireless</td>
+                                <td><code>192.168.1.51</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-dynamic">Dinámica</span></td>
+                                <td></td>
+                            </tr>
+
+                            <!-- ORDENADORES -->
+                            <tr class="category-row">
+                                <td colspan="7">🖥️ Ordenadores <span class="range-tag">(Rango DHCP)</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">PC0</span></td>
+                                <td>FastEth0</td>
+                                <td><code>192.168.1.52</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-dynamic">Dinámica</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">PC1</span></td>
+                                <td>FastEth0</td>
+                                <td><code>192.168.1.53</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-dynamic">Dinámica</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">PC2</span></td>
+                                <td>FastEth0</td>
+                                <td><code>192.168.1.54</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-dynamic">Dinámica</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">PC3</span></td>
+                                <td>FastEth0</td>
+                                <td><code>192.168.1.55</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-dynamic">Dinámica</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">PC4</span></td>
+                                <td>FastEth0</td>
+                                <td><code>192.168.1.56</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-dynamic">Dinámica</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">PC5</span></td>
+                                <td>FastEth0</td>
+                                <td><code>192.168.1.57</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-dynamic">Dinámica</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">PC6</span></td>
+                                <td>FastEth0</td>
+                                <td><code>192.168.1.58</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-dynamic">Dinámica</span></td>
+                                <td>Añadido</td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">PC7</span></td>
+                                <td>FastEth0</td>
+                                <td><code>192.168.1.59</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-dynamic">Dinámica</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">PC8</span></td>
+                                <td>FastEth0</td>
+                                <td><code>192.168.1.60</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-dynamic">Dinámica</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">PC9</span></td>
+                                <td>FastEth0</td>
+                                <td><code>192.168.1.61</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-dynamic">Dinámica</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">PC10</span></td>
+                                <td>FastEth0</td>
+                                <td><code>192.168.1.62</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-dynamic">Dinámica</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">PC11</span></td>
+                                <td>FastEth0</td>
+                                <td><code>192.168.1.63</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-dynamic">Dinámica</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">PC12</span></td>
+                                <td>FastEth0</td>
+                                <td><code>192.168.1.64</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-dynamic">Dinámica</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">PC13</span></td>
+                                <td>FastEth0</td>
+                                <td><code>192.168.1.65</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-dynamic">Dinámica</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">PC14</span></td>
+                                <td>FastEth0</td>
+                                <td><code>192.168.1.66</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-dynamic">Dinámica</span></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Servicios Implementados -->
+        <section id="servicios" class="manual-section glass-card">
+            <div class="section-number">04</div>
+            <h2>Servicios Implementados</h2>
+
+            <div class="subsection">
+                <h3>4.1 Servidor principal</h3>
+                <p>El servidor local del coworking proporciona los siguientes servicios:</p>
+                <div class="service-grid">
+                    <div class="service-item">
+                        <span class="service-icon">📡</span>
+                        <strong>DHCP</strong>
+                        <p>Asignación de direcciones IP</p>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-icon">🌐</span>
+                        <strong>DNS</strong>
+                        <p>Resolución interna</p>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-icon">📁</span>
+                        <strong>File Server</strong>
+                        <p>Carpetas compartidas</p>
+                    </div>
+                </div>
+                <div class="code-block">
+                    <div class="code-line code-comment">// Estructura de carpetas compartidas</div>
+                    <div class="code-line"><span class="code-folder">/public</span> → acceso permitido a todos</div>
+                    <div class="code-line"><span class="code-folder">/staff</span> → solo personal autorizado</div>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>4.2 Servicios para usuarios</h3>
+                <ul class="feature-list">
+                    <li>Internet de alta velocidad</li>
+                    <li>Impresión centralizada</li>
+                    <li>Acceso a red Wi-Fi</li>
+                    <li>Aplicación de gestión de reservas</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>4.3 Seguridad general</h3>
+                <div class="security-grid">
+                    <div class="security-item">
+                        <span class="security-badge">WPA3</span>
+                        <p>Red Wi-Fi protegida</p>
+                    </div>
+                    <div class="security-item">
+                        <span class="security-badge">Firewall</span>
+                        <p>Permitir HTTP(S), restringir segmentos</p>
+                    </div>
+                    <div class="security-item">
+                        <span class="security-badge">RDP</span>
+                        <p>Solo para soporte técnico</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Pruebas -->
+        <section id="pruebas" class="manual-section glass-card">
+            <div class="section-number">05</div>
+            <h2>Pruebas Técnicas Realizadas</h2>
+
+            <div class="subsection">
+                <h3>5.1 Pruebas de conectividad</h3>
+                <ul class="feature-list check-list">
+                    <li>Comunicación exitosa entre todos los PCs</li>
+                    <li>Resolución DNS funcional</li>
+                    <li>DHCP asigna direcciones sin incidencias</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>5.2 Resultados</h3>
+                <div class="result-banner success">
+                    <span class="result-icon">✓</span>
+                    <div>
+                        <strong>No se detectaron incidencias</strong>
+                        <p>Todas las pruebas completadas satisfactoriamente</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Checklist -->
+        <section id="checklist" class="manual-section glass-card">
+            <div class="section-number">06</div>
+            <h2>Checklist de Configuración</h2>
+
+            <div class="checklist-grid">
+                <div class="checklist-item completed">
+                    <span class="check-mark">✓</span>
+                    <span>Equipos configurados y actualizados</span>
+                </div>
+                <div class="checklist-item completed">
+                    <span class="check-mark">✓</span>
+                    <span>Servicios de red operativos</span>
+                </div>
+                <div class="checklist-item completed">
+                    <span class="check-mark">✓</span>
+                    <span>Seguridad aplicada</span>
+                </div>
+                <div class="checklist-item completed">
+                    <span class="check-mark">✓</span>
+                    <span>Pruebas validadas</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Back to Home -->
+        <div class="back-home">
+            <a href="index.html" class="btn btn-primary">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7" />
+                </svg>
+                <span>Volver al Inicio</span>
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2026 CoWorkTech. Manual Técnico de Configuración.</p>
+            <p class="project-credit">Desarrollado como parte del proyecto de infraestructura tecnológica.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
