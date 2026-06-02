@@ -302,18 +302,70 @@
                     <li><span class="check-icon">✓</span> <strong>Alianzas</strong> con restaurantes, tiendas y parkings</li>
                     <li><span class="check-icon">✓</span> Mobiliario reciclado y climatización eficiente</li>
                     <li><span class="check-icon">✓</span> Apagado 20:00h · LED con sensores · Reciclaje electrónico</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+                <    <!-- Lightbox overlay -->
+    <div id="plano-lightbox" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.88);backdrop-filter:blur(10px);align-items:center;justify-content:center;cursor:zoom-out;" onclick="this.style.display='none'">
+        <img id="plano-lightbox-img" src="" alt="Plano ampliado" style="max-width:92vw;max-height:88vh;border-radius:16px;box-shadow:0 32px 80px rgba(0,0,0,0.7);object-fit:contain;pointer-events:none;">
+        <button onclick="document.getElementById('plano-lightbox').style.display='none'" style="position:absolute;top:24px;right:30px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);color:#fff;font-size:22px;width:44px;height:44px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.22)'" onmouseout="this.style.background='rgba(255,255,255,0.12)'">&times;</button>
+    </div>
 
-    <!-- Zonificacion Section (Doc 2) -->
     <section id="zonificacion" style="padding: 100px 0;">
         <div class="section-header">
             <span class="section-tag">Plano del Espacio</span>
             <h2 class="section-title">Zonificación del <span class="gradient-text">Espacio Físico</span></h2>
             <p class="section-subtitle">Distribución optimizada para el flujo de trabajo, aislamiento acústico y eficiencia en comunicaciones</p>
         </div>
+
+        <!-- ===== GALERÍA DE PLANOS ===== -->
+        <div style="max-width:1200px;margin:0 auto 64px;padding:0 24px;">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(440px,1fr));gap:24px;">
+
+                <!-- Plano 3D -->
+                <div class="glass-card" style="padding:0;border-radius:24px;overflow:hidden;cursor:zoom-in;group;"
+                     onclick="document.getElementById('plano-lightbox-img').src='imagen 1.png';document.getElementById('plano-lightbox').style.display='flex';">
+                    <div style="position:relative;overflow:hidden;">
+                        <img src="imagen 1.png" alt="Plano 3D del espacio de coworking"
+                             style="width:100%;height:320px;object-fit:cover;display:block;transition:transform 0.45s cubic-bezier(.4,0,.2,1);"
+                             onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+                        <!-- overlay on hover -->
+                        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.55) 0%,transparent 60%);pointer-events:none;"></div>
+                        <div style="position:absolute;top:16px;left:16px;background:rgba(99,102,241,0.85);backdrop-filter:blur(8px);color:#fff;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:6px 14px;border-radius:20px;">Vista 3D</div>
+                        <div style="position:absolute;top:16px;right:16px;background:rgba(0,0,0,0.4);backdrop-filter:blur(6px);color:#fff;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;pointer-events:none;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                        </div>
+                    </div>
+                    <div style="padding:20px 24px;">
+                        <div style="font-size:15px;font-weight:700;color:#e2e8f0;margin-bottom:4px;">Renderizado 3D del Espacio</div>
+                        <div style="font-size:13px;color:#64748b;">Vista aérea tridimensional · Distribución de zonas y mobiliario</div>
+                    </div>
+                </div>
+
+                <!-- Plano Técnico -->
+                <div class="glass-card" style="padding:0;border-radius:24px;overflow:hidden;cursor:zoom-in;"
+                     onclick="document.getElementById('plano-lightbox-img').src='imagen 2.png';document.getElementById('plano-lightbox').style.display='flex';">
+                    <div style="position:relative;overflow:hidden;">
+                        <img src="imagen 2.png" alt="Plano técnico del espacio de coworking"
+                             style="width:100%;height:320px;object-fit:cover;display:block;transition:transform 0.45s cubic-bezier(.4,0,.2,1);"
+                             onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+                        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.55) 0%,transparent 60%);pointer-events:none;"></div>
+                        <div style="position:absolute;top:16px;left:16px;background:rgba(6,182,212,0.85);backdrop-filter:blur(8px);color:#fff;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:6px 14px;border-radius:20px;">Plano Técnico</div>
+                        <div style="position:absolute;top:16px;right:16px;background:rgba(0,0,0,0.4);backdrop-filter:blur(6px);color:#fff;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;pointer-events:none;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                        </div>
+                    </div>
+                    <div style="padding:20px 24px;">
+                        <div style="font-size:15px;font-weight:700;color:#e2e8f0;margin-bottom:4px;">Plano Técnico con Cotas</div>
+                        <div style="font-size:13px;color:#64748b;">Vista 2D con medidas · Zonificación y dimensiones exactas</div>
+                    </div>
+                </div>
+
+            </div>
+            <p style="text-align:center;margin-top:16px;font-size:13px;color:#475569;">
+                <svg style="vertical-align:middle;margin-right:6px;" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                Haz clic en cualquier imagen para verla a pantalla completa
+            </p>
+        </div>
+        <!-- ===== FIN GALERÍA ===== -->
+
         <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); gap:24px; max-width:1100px; margin:0 auto; padding:0 24px;">
             <!-- Area Operativa -->
             <div class="glass-card" style="padding:36px; border-radius:20px; border-top: 3px solid #6366f1;">
@@ -346,7 +398,7 @@
                 </div>
                 <p style="font-size:14px;color:#94a3b8;line-height:1.8;margin-bottom:16px;">Recepción principal, lounge, cocina y salas de reuniones. Ubicadas estratégicamente <strong style="color:#67e8f9;">lejos de los puestos fijos</strong> para evitar ruido. Incluye zona de impresión centralizada (HP LaserJet Pro MFP) y <em>Phone Booths</em> insonorizadas.</p>
                 <div style="display:flex;flex-wrap:wrap;gap:8px;">
-                    <span style="background:rgba(6,182,212,0.1);color:#67e8f9;padding:5px 12px;border-radius:20px;font-size:12px;font-weight:600;">Lounge & Cocina</span>
+                    <span style="background:rgba(6,182,212,0.1);color:#67e8f9;padding:5px 12px;border-radius:20px;font-size:12px;font-weight:600;">Lounge &amp; Cocina</span>
                     <span style="background:rgba(6,182,212,0.1);color:#67e8f9;padding:5px 12px;border-radius:20px;font-size:12px;font-weight:600;">Phone Booths</span>
                     <span style="background:rgba(6,182,212,0.1);color:#67e8f9;padding:5px 12px;border-radius:20px;font-size:12px;font-weight:600;">Zona impresión</span>
                 </div>
@@ -370,7 +422,6 @@
                 </div>
             </div>
         </div>
-    </section>
 
     <!-- ODS Section -->
     <section id="ods" class="ods-section">
