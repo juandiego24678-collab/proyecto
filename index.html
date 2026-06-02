@@ -93,73 +93,48 @@
         .spec-key { color: #94a3b8; font-size: 12px; flex-shrink: 0; }
         .spec-val { color: #f1f5f9; font-weight: 600; text-align: right; font-size: 13px; }
 
-        /* ── Top Team Bar ── */
-        .top-team-bar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1100;
-            background: linear-gradient(90deg, rgba(10,10,30,0.97) 0%, rgba(20,14,50,0.97) 50%, rgba(10,10,30,0.97) 100%);
-            backdrop-filter: blur(16px);
-            border-bottom: 1px solid rgba(99,102,241,0.2);
-            padding: 0 5%;
-            height: 36px;
+        /* ── Hero Team Members ── */
+        .hero-team {
             display: flex;
-            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
             justify-content: center;
-            gap: 0;
+            margin-bottom: 32px;
         }
-        .top-team-bar .bar-inner {
-            display: flex;
-            align-items: center;
-            gap: 0;
-            flex-wrap: nowrap;
-            overflow: hidden;
-        }
-        .top-team-bar .bar-label {
-            font-size: 10px;
-            font-weight: 700;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: #6366f1;
-            margin-right: 20px;
-            flex-shrink: 0;
-        }
-        .top-team-bar .bar-member {
+        .hero-team-member {
             display: flex;
             align-items: center;
             gap: 8px;
-            flex-shrink: 0;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 7px 16px 7px 8px;
+            border-radius: 50px;
+            backdrop-filter: blur(8px);
+            transition: all 0.2s ease;
         }
-        .top-team-bar .bar-member .bar-avatar {
-            width: 20px;
-            height: 20px;
+        .hero-team-member:hover {
+            background: rgba(99,102,241,0.15);
+            border-color: rgba(99,102,241,0.35);
+            transform: translateY(-2px);
+        }
+        .hero-team-avatar {
+            width: 28px;
+            height: 28px;
             border-radius: 50%;
-            background: linear-gradient(135deg, #6366f1, #a78bfa);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 9px;
+            font-size: 10px;
             font-weight: 800;
             color: #fff;
             flex-shrink: 0;
         }
-        .top-team-bar .bar-member .bar-name {
-            font-size: 12px;
+        .hero-team-name {
+            font-size: 13px;
             font-weight: 600;
             color: #e2e8f0;
             white-space: nowrap;
         }
-        .top-team-bar .bar-sep {
-            width: 1px;
-            height: 16px;
-            background: rgba(255,255,255,0.12);
-            margin: 0 20px;
-            flex-shrink: 0;
-        }
-        /* push content down to account for top bar */
-        body { padding-top: 36px; }
     </style>
 </head>
 
@@ -172,32 +147,6 @@
         <div class="blob blob-4"></div>
     </div>
 
-    <!-- Top Team Bar -->
-    <div class="top-team-bar">
-        <div class="bar-inner">
-            <span class="bar-label">Equipo</span>
-
-            <div class="bar-member">
-                <div class="bar-avatar">JD</div>
-                <span class="bar-name">Juan Diego Casado</span>
-            </div>
-            <div class="bar-sep"></div>
-            <div class="bar-member">
-                <div class="bar-avatar" style="background:linear-gradient(135deg,#06b6d4,#0ea5e9);">JS</div>
-                <span class="bar-name">José Sebastián Fernández</span>
-            </div>
-            <div class="bar-sep"></div>
-            <div class="bar-member">
-                <div class="bar-avatar" style="background:linear-gradient(135deg,#10b981,#34d399);">NH</div>
-                <span class="bar-name">Nicolás Hidalgo</span>
-            </div>
-            <div class="bar-sep"></div>
-            <div class="bar-member">
-                <div class="bar-avatar" style="background:linear-gradient(135deg,#f59e0b,#fbbf24);">GA</div>
-                <span class="bar-name">Gerardo Aranda</span>
-            </div>
-        </div>
-    </div>
 
     <!-- Navigation -->
     <nav class="navbar">
@@ -234,6 +183,26 @@
             <div class="hero-badge">
                 <span class="pulse"></span>
                 <span>Proyecto Intermodular · Coworking Tecnológico</span>
+            </div>
+
+            <!-- Team Members -->
+            <div class="hero-team">
+                <div class="hero-team-member">
+                    <div class="hero-team-avatar" style="background:linear-gradient(135deg,#6366f1,#a78bfa);">JD</div>
+                    <span class="hero-team-name">Juan Diego Casado</span>
+                </div>
+                <div class="hero-team-member">
+                    <div class="hero-team-avatar" style="background:linear-gradient(135deg,#06b6d4,#0ea5e9);">JS</div>
+                    <span class="hero-team-name">José Sebastián Fernández</span>
+                </div>
+                <div class="hero-team-member">
+                    <div class="hero-team-avatar" style="background:linear-gradient(135deg,#10b981,#34d399);">NH</div>
+                    <span class="hero-team-name">Nicolás Hidalgo</span>
+                </div>
+                <div class="hero-team-member">
+                    <div class="hero-team-avatar" style="background:linear-gradient(135deg,#f59e0b,#fbbf24);">GA</div>
+                    <span class="hero-team-name">Gerardo Aranda</span>
+                </div>
             </div>
             <h1 class="hero-title">
                 Tu Espacio de

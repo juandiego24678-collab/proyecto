@@ -639,8 +639,8 @@ body {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 32px;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 28px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -712,15 +712,16 @@ body {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 10px;
 }
 
 .service-list li {
     display: flex;
     align-items: flex-start;
     gap: 12px;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.8);
+    line-height: 1.4;
 }
 
 .check-icon {
@@ -1091,7 +1092,7 @@ body {
 
 .sprint-timeline {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 24px;
     position: relative;
 }
